@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </head>
+    <body>
+        <div id="map" style="width: 1280px; height: 600px"></div>
+        <script src="https://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+        <script src="https://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+        <script src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js" type="text/javascript" charset="utf-8"></script>
+        <script src="here-map.js" type="text/javascript" charset="utf-8"></script>
+        <script>
+            const start = async () => {
+                const here = new HereMap("HERE-APP-ID", "HERE-APP-CODE", document.getElementById("map"));
+                const tracy = await here.geocode("Tracy, CA");
+                const manteca = await here.geocode("Manteca, CA");
+                const modesto = await here.geocode("Modesto, CA");
+                here.dropMarker(tracy.Latitude, tracy.Longitude);
+                here.dropMarker(manteca.Latitude, manteca.Longitude);
+                here.dropMarker(modesto.Latitude, modesto.Longitude);
+                here.drawLinesBetweenMarkers();
+                here.drawRoute(tracy, modesto);
+            }
+            start();
+        </script>
+    </body>
+</html>
