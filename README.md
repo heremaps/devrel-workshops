@@ -8,6 +8,8 @@ HERE workshops exist for the following topics:
 
 - [Angular](angular)
 - [JavaScript](javascript)
+  - [Intro by Michael Palermo](javascript/intro-palermo)
+  - [Intro by Nic Raboy](javascript/intro-raboy)
 - [Vue.js](vue)
 
 As more workshops are created, they will be added to the list and will be given at various events.
