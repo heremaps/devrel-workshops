@@ -6,9 +6,12 @@ This repository is meant to act as a workshop in-a-box for developer events such
 
 HERE workshops exist for the following topics:
 
-- [Angular](angular)
+- [Angular](angular/README.md)
 - [JavaScript](javascript)
-- [Vue.js](vue)
+  - [Intro by Michael Palermo](javascript/intro-palermo/README.md)
+  - [Intro by Nic Raboy](javascript/intro-raboy/README.md)
+- [Vue.js](vue/README.md)
+- [SAPUI5](sap/intro-maps/README.md)
 
 As more workshops are created, they will be added to the list and will be given at various events.
 
