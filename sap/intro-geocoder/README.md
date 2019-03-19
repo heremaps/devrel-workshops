@@ -3,7 +3,7 @@
 | ![Overview](../../images/01.png)<br>Overview | [![Prerequisites](../../images/02_off.png)<br>Prerequisites](./02.md) | [![Discovery](../../images/03_off.png)<br>Discovery](./03.md) | [![Configuration](../../images/04_off.png)<br>Configuration](./04.md) | [![Development](../../images/05_off.png)<br>Development](./05.md)
 | :---: | :---: | :---: | :---: | :---: |
 
-## Overview of SAPUI5 Geocode Workshop
+## Overview of SAPUI5 Geocoder Workshop
 
 This workshop will guide you how to use geocoding location services using HERE APIs within an SAPUI5 environment. The workshop concludes with an SAPUI5 app showcasing a few features of the HERE Location Suite API Package. The following is an outline of what is covered:
 
