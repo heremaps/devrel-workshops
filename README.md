@@ -11,7 +11,9 @@ HERE workshops exist for the following topics:
   - [Intro by Michael Palermo](javascript/intro-palermo/README.md)
   - [Intro by Nic Raboy](javascript/intro-raboy/README.md)
 - [Vue.js](vue/README.md)
-- [SAPUI5](sap/intro-maps/README.md)
+- [SAP](sap)
+  - [SAPUI5 Maps Intro](sap/intro-maps/README.md)
+  - [SAPUI5 Geocoder](sap/intro-geocoder/README.md)
 
 As more workshops are created, they will be added to the list and will be given at various events.
 
