@@ -80,7 +80,7 @@ In this step you are going to deploy HERE Geocode function in AWS console. Use t
 
 1. Scroll down to the Function code section, you need to replace the existing code in the index.js.
 
-1. Copy and paste the JavaScript code from [URL](aws-serverless/real-time-data-streams/ReverseGeoCode/index.js)  into the code editor (index.js)
+1. Copy and paste the JavaScript code from [URL](../real-time-data-streams/ReverseGeoCode/index.js)  into the code editor (index.js)
 
      
 </p></details>
@@ -228,9 +228,7 @@ We will create a Lambda function called WildRydesStreamProcessor_Location that w
 
 1. Scroll down to the Function code section to replace the existing code in the index.js.
 
-1. Copy and paste the JavaScript code from the below URL into the code editor.
-
-   https://github.com/iyyappan16/here_aws/blob/master/devrel-workshops/aws-serverless/real-time-data-streams/Kineses2DynamoDB/index.js
+1. Copy and paste the JavaScript code from the [URL](../real-time-data-streams/Kineses2DynamoDB/index.js) into the code editor.
 
 1. In your new code find the “FunctionName” variable and paste the function name which you copied in Step-2.
 

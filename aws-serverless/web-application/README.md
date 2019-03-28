@@ -96,7 +96,7 @@ To view the changes on your website, you need to upload the content to your S3 B
 
 1. Select your bucket which you have created and used in the previous modules.
 
-1. Click the [link](aws-serverless/web-application/website_files.zip) and download the zip file (website_files.zip) and extract on your local machine.
+1. Click the [link](../web-application/website_files.zip) and download the zip file (website_files.zip) and extract on your local machine.
      
 2. Browse to the directory where you saved the files locally which you have downloaded in previous step. Open the file **“ride.js”** with any text editor. 
 
