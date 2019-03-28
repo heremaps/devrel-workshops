@@ -80,9 +80,8 @@ In this step you are going to deploy HERE Geocode function in AWS console. Use t
 
 1. Scroll down to the Function code section, you need to replace the existing code in the index.js.
 
-1. Copy and paste the JavaScript code from the below URL into the code editor (index.js)
+1. Copy and paste the JavaScript code from [URL](aws-serverless/real-time-data-streams/ReverseGeoCode/index.js)  into the code editor (index.js)
 
-     https://github.com/heremaps/devrel-workshops/aws-serverless/real-time-data-streams/ReverseGeoCode/index.js
      
 </p></details>
 
