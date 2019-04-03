@@ -151,7 +151,7 @@ After completing all the above implementation steps, you should be able to acces
 
 1. You should be able to see "set drop" button on the right-side corner.
 
-     ![Deploy SAR Screenshot](../6_HERE_Lambda_Extension/Routing_images/RoutingFunctionDeploy8.png)
+     ![Deploy SAR Screenshot](../6_HERE_Lambda_Extension/Routing_images/RoutingFunctionDeploy8.0.png)
 
 1. After the map has loaded, click anywhere on the map to set a pickup location. 
 
@@ -161,9 +161,13 @@ After completing all the above implementation steps, you should be able to acces
 
 1. Now it should automatically load the map and show the route map from the Pickup Point to the Drop Point
 
+     ![Deploy SAR Screenshot](../6_HERE_Lambda_Extension/Routing_images/RoutingFunctionDeploy8.png)
+     
      ![Deploy SAR Screenshot](../6_HERE_Lambda_Extension/Routing_images/RoutingFunctionDeploy9.png)
      
      ![Deploy SAR Screenshot](../6_HERE_Lambda_Extension/Routing_images/RoutingFunctionDeploy10.png)
+     
+     ![Deploy SAR Screenshot](../6_HERE_Lambda_Extension/Routing_images/RoutingFunctionDeploy11.PNG)
 
 1. Congratulations, you have completed the **Location Services with AWS Lambda for Web Applications module!**.
 
