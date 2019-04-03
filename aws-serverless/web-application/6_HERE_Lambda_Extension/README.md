@@ -167,7 +167,7 @@ After completing all the above implementation steps, you should be able to acces
      
      ![Deploy SAR Screenshot](../6_HERE_Lambda_Extension/Routing_images/RoutingFunctionDeploy10.png)
      
-     ![Deploy SAR Screenshot](../6_HERE_Lambda_Extension/Routing_images/RoutingFunctionDeploy11.png)
+     ![Deploy SAR Screenshot](../6_HERE_Lambda_Extension/Routing_images/RoutingFunctionDeploy11.PNG)
 
 1. Congratulations, you have completed the **Location Services with AWS Lambda for Web Applications module!**.
 
