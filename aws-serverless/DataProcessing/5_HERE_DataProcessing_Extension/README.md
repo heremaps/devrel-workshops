@@ -5,7 +5,7 @@ In this module we are going to illustrate how to use AWS services to process rea
 
 ## Overview
 
-In the previous modules you have created and configured a Lambda function to read from the Amazon Kinesis stream and write records to an Amazon DynamoDB table as they arrive. This table will contain the following columns "Name, StatusTime, Distance, MinMagicPoints, MaxMagicPoints, MinHealthPoints and MaxHealthPoints".
+In the previous [AWS Serverless Modules](https://dataprocessing.wildrydes.com) you have created and configured a Lambda function to read from the Amazon Kinesis stream and write records to an Amazon DynamoDB table as they arrive. This table will contain the following columns "Name, StatusTime, Distance, MinMagicPoints, MaxMagicPoints, MinHealthPoints and MaxHealthPoints".
 
 In this module, you’ll use the Amazon Kinesis stream which you have created in the previous modules to collect and store sensor data from our unicorn fleet. You will then deploy the HERE Geocode API SAR function to obtain the address for a particular Latitude and Longitude.
 
