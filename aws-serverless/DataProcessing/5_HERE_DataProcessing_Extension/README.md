@@ -1,7 +1,9 @@
-# Module #7 Serverless Data Processing on AWS
+# Module #5 Serverless Data Processing on AWS
 **Stream Processing with HERE Location Services**
 
-In this module we are going to illustrate how to use AWS services to process real-time data streams with serverless applications from the AWS Serverless Application Repository (SAR). We will also use HERE’s Geocode API to find the street address of each unicorn in the fleet.    
+This module is an extension to the popular [AWS Workshop Series](https://github.com/aws-samples/aws-serverless-workshops/tree/master/WebApplication) for building web applications. Here we will extend the [DataProcessing](https://github.com/aws-samples/aws-serverless-workshops/tree/master/DataProcessing) module. We pick up directly after the 4th module in the series.
+
+We are going to illustrate how to use AWS services to process real-time data streams with serverless applications. We will augment the data stream by inserting the street address of each unicorn in the fleet using HERE’s Geocode API.
 
 ## Overview
 
