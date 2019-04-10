@@ -1,23 +1,22 @@
 # XYZ Workshop
 
-## Studio
+## Studio (30 mins)
 
 - import the earthquake data
-- dynamic styling
+- conditional styling
 
-## CLI-Studio interaction
+## CLI-Studio interaction (30 mins)
 
 - add a shapefile (tectonic plates) with the CLI, add that data to the map in Studio
 
-## CLI advanced options
+## CLI advanced options (30 mins)
 
-- show streaming, geojsonl
+- show streaming, geojsonl 
 
-## Using XYZ with other
+## Using XYZ with other tools and renderes (30 mins)
 - QGIS
 - mapshaper
-
-## Rendering data fro XYZ
-
 - Tangram
 - Leaflet
+
+## Integrating XYZ and HLS (30 mins)
