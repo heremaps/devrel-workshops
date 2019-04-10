@@ -19,11 +19,13 @@
 
 - QGIS XYZ plugin (reading from earthquake data, some sort of GIS magic -- PIP?)
 - mapshaper
- - converting state plane
- - simplify polygons
+  - converting state plane
+  - simplify polygons
 - Tangram
- - show vector tile endpoint
+  - show vector tile endpoint
+  - show tags
 - Leaflet
+- point to Stamen examples
 
 ## Integrating XYZ and HLS (30 mins)
 
