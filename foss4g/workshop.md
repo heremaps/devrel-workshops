@@ -12,12 +12,17 @@
 - add tags during upload
 - streaming large files
 - geojsonl 
+- space invader preview
+
 
 ## Using XYZ with other tools and renders (30 mins)
 
-- QGIS plugin
-- mapshaper (converting state plane)
+- QGIS XYZ plugin (reading from earthquake data, some sort of GIS magic -- PIP?)
+- mapshaper
+ - converting state plane
+ - simplify polygons
 - Tangram
+ - show vector tile endpoint
 - Leaflet
 
 ## Integrating XYZ and HLS (30 mins)
