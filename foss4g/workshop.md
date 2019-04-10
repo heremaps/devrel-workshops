@@ -7,9 +7,9 @@
 
 ## CLI (30 mins)
 
-- add a shapefile (tectonic plates) with the CLI, add that data to the map in Studio
-- csv (unusual lat/lon fields)
-- tags
+- add a shapefile (tectonic plates) with the CLI, add that space to the earthquake map in Studio
+- import csv (unusual lat/lon fields)
+- add tags during upload
 - streaming large files
 - geojsonl 
 
