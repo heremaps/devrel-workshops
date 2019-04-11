@@ -214,7 +214,7 @@ In Account, enter your AWS Account ID which is a twelve-digit number, e.g.: 1234
      
 </p></details>
 
-### 5. Create an IAM role for your Lambda function
+### 4. Create an IAM role for your Lambda function
 
 We will create a Lambda function called WildRydesStreamProcessor_Location that will be triggered whenever a new record is available in the WildRydes stream. Use the provided [index.js](https://github.com/heremaps/devrel-workshops/blob/master/aws-serverless/DataProcessing/5_HERE_DataProcessing_Extension/Kineses2DynamoDB/index.js) implementation for your function code. Create an environment variable with the key TABLE_NAME and the value UnicornLocation. Configure the function to use the WildRydesStreamProcessor_Location role created in the previous section
 
