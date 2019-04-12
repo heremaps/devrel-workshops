@@ -17,6 +17,7 @@ HERE workshops exist for the following topics:
 - [AWS Serverless](aws-serverless) // HERE's Extensions to the Popular [AWS WildRydes Workshops](https://github.com/aws-samples/aws-serverless-workshops)
   - [AWS Serverless Extension](aws-serverless/web-application/6_HERE_Lambda_Extension)
   - [AWS Serverless DataProcessing Extension](aws-serverless/DataProcessing/5_HERE_DataProcessing_Extension)
+- [XYZ](xyz/README.md)
 
 As more workshops are created, they will be added to the list and will be given at various events.
 
