@@ -150,7 +150,7 @@ We need to create an API Endpoint to invoke and access the Lambda function which
 
 1. Choose Create API.
 
-	![Deploy SAR Screenshot](../5_HERE_DataProcessing_Extension/Geocode_images/NewTest0.PNG)
+	![Deploy SAR Screenshot](../5_HERE_DataProcessing_Extension/Geocode_images/NewTest0.png)
 
 1. Under Choose the protocol, choose REST.
 
@@ -164,14 +164,14 @@ We need to create an API Endpoint to invoke and access the Lambda function which
 
 1. Choose Create API.
 
-	![Deploy SAR Screenshot](../5_HERE_DataProcessing_Extension/Geocode_images/NewTest1.PNG)
+	![Deploy SAR Screenshot](../5_HERE_DataProcessing_Extension/Geocode_images/NewTest1.png)
      
 
 1. Choose the root resource (/) in the Resources tree.
 
 1. Choose Create Resource from the Actions dropdown menu.
 
-	![Deploy SAR Screenshot](../5_HERE_DataProcessing_Extension/Geocode_images/NewTest2.PNG)
+	![Deploy SAR Screenshot](../5_HERE_DataProcessing_Extension/Geocode_images/NewTest2.png)
 
 1. Leave Configure as proxy resource unchecked.
 
@@ -183,7 +183,7 @@ We need to create an API Endpoint to invoke and access the Lambda function which
 
 1. Choose Create Resource
 
-     ![Deploy SAR Screenshot](../5_HERE_DataProcessing_Extension/Geocode_images/NewTest3.PNG)
+     ![Deploy SAR Screenshot](../5_HERE_DataProcessing_Extension/Geocode_images/NewTest3.png)
      
      
 
@@ -193,7 +193,7 @@ We need to create an API Endpoint to invoke and access the Lambda function which
 
 1. Choose GET from the dropdown menu, and choose the checkmark icon
 
-     ![Deploy SAR Screenshot](../5_HERE_DataProcessing_Extension/Geocode_images/NewTest4.PNG)
+     ![Deploy SAR Screenshot](../5_HERE_DataProcessing_Extension/Geocode_images/NewTest4.png)
       
 
 1. Leave the Integration type set to Lambda Function.
@@ -208,7 +208,7 @@ We need to create an API Endpoint to invoke and access the Lambda function which
 
 1. Choose Save.
 
-     ![Deploy SAR Screenshot](../5_HERE_DataProcessing_Extension/Geocode_images/NewTest5.PNG)
+     ![Deploy SAR Screenshot](../5_HERE_DataProcessing_Extension/Geocode_images/NewTest5.png)
      
 1. Choose OK when prompted with Add Permission to Lambda Function.
 
@@ -222,11 +222,11 @@ We need to create an API Endpoint to invoke and access the Lambda function which
 
 1. Choose Deploy.
 
-     ![Deploy SAR Screenshot](../5_HERE_DataProcessing_Extension/Geocode_images/NewTest6.PNG)
+     ![Deploy SAR Screenshot](../5_HERE_DataProcessing_Extension/Geocode_images/NewTest6.png)
      
 1. Click on the GET and note the API's Invoke URL. Note down the URL to invoke the lambda function.
 
- 	![Deploy SAR Screenshot](../5_HERE_DataProcessing_Extension/Geocode_images/NewTest7.PNG)
+ 	![Deploy SAR Screenshot](../5_HERE_DataProcessing_Extension/Geocode_images/NewTest7.png)
      
 </p></details>
 
@@ -342,7 +342,7 @@ We will create a Lambda function called WildRydesStreamProcessor_Location that w
 
 1. In “index.js” file find the “url” variable in line number 30 and paste the API endpoint which you created and copied in Step-2.
 
-          	![Deploy SAR Screenshot](../5_HERE_DataProcessing_Extension/Geocode_images/NewTest10.png)
+      ![Deploy SAR Screenshot](../5_HERE_DataProcessing_Extension/Geocode_images/NewTest10.png)
 		
 		let url = ‘https://xx22yyxwe9.execute-api.eu-west-1.amazonaws.com/Test/geocoder’
 
