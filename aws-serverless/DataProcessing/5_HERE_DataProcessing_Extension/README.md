@@ -139,6 +139,99 @@ You can test the Geocode function that you deployed in the AWS Lambda console
 
 </p></details>
 
+### 2. Create and Deploy the API
+
+We need to create an API Endpoint to invoke and access the Lambda function which we deployed in the previous step. 
+
+<details>
+<summary><strong>Step-by-step instructions (expand for details)</strong></summary><p>
+
+1. Go to the AWS Management Console, choose Services then select API Gateway under Networking & Content Delivery.
+
+1. Choose Create API.
+
+	![Deploy SAR Screenshot](../5_HERE_DataProcessing_Extension/Geocode_images/NewTest0.PNG)
+
+1. Under Choose the protocol, choose REST.
+
+1. Under Create new API, choose New API.
+
+1. Under Settings: For API name, enter GeocodeTest.
+
+1. If desired, enter a description in the Description field; otherwise, leave it empty.
+
+1. Leave Endpoint Type set to Regional.
+
+1. Choose Create API.
+
+	![Deploy SAR Screenshot](../5_HERE_DataProcessing_Extension/Geocode_images/NewTest1.PNG)
+     
+
+1. Choose the root resource (/) in the Resources tree.
+
+1. Choose Create Resource from the Actions dropdown menu.
+
+	![Deploy SAR Screenshot](../5_HERE_DataProcessing_Extension/Geocode_images/NewTest2.PNG)
+
+1. Leave Configure as proxy resource unchecked.
+
+1. For Resource Name, enter geocode.
+
+1. Leave Resource Path set to / geocode.
+
+1. Leave Enable API Gateway CORS unchecked.
+
+1. Choose Create Resource
+
+     ![Deploy SAR Screenshot](../5_HERE_DataProcessing_Extension/Geocode_images/NewTest3.PNG)
+     
+     
+
+1. In the Resources list, choose / geocode.
+
+1. In the Actions menu, choose Create method.
+
+1. Choose GET from the dropdown menu, and choose the checkmark icon
+
+     ![Deploy SAR Screenshot](../5_HERE_DataProcessing_Extension/Geocode_images/NewTest4.PNG)
+      
+
+1. Leave the Integration type set to Lambda Function.
+
+1. Choose Use Lambda Proxy integration
+
+1. From the Lambda Region dropdown menu, choose the region where you created the serverlessrepo-Geocode-GeocodeFunction Lambda function.
+
+1. In the Lambda Function field, type any character and choose serverlessrepo-Geocode-GeocodeFunction from the dropdown menu.
+
+1. Leave Use Default Timeout checked.
+
+1. Choose Save.
+
+     ![Deploy SAR Screenshot](../5_HERE_DataProcessing_Extension/Geocode_images/NewTest5.PNG)
+     
+1. Choose OK when prompted with Add Permission to Lambda Function.
+
+1. Choose Deploy API from the Actions dropdown menu to Deploy your API.
+
+1. For Deployment stage, choose [new stage].
+
+1. For Stage name, enter Test.
+
+1. If desired, enter a Stage description & Deployment description.
+
+1. Choose Deploy.
+
+     ![Deploy SAR Screenshot](../5_HERE_DataProcessing_Extension/Geocode_images/NewTest6.PNG)
+     
+1. Click on the GET and note the API's Invoke URL. Note down the URL to invoke the lambda function.
+
+ 	![Deploy SAR Screenshot](../5_HERE_DataProcessing_Extension/Geocode_images/NewTest7.PNG)
+     
+</p></details>
+
+
+
 ### 2. Create an Amazon DynamoDB table
 
 We need to create a Dynamo DB table to store the WildRydes Kinesis stream data along with address for the corresponding Latitude & Longitude. 
@@ -214,7 +307,7 @@ In Account, enter your AWS Account ID which is a twelve-digit number, e.g.: 1234
      
 </p></details>
 
-### 4. Create an IAM role for your Lambda function
+### 4. Create your Lambda function
 
 We will create a Lambda function called WildRydesStreamProcessor_Location that will be triggered whenever a new record is available in the WildRydes stream. Use the provided [index.js](https://github.com/heremaps/devrel-workshops/blob/master/aws-serverless/DataProcessing/5_HERE_DataProcessing_Extension/Kineses2DynamoDB/index.js) implementation for your function code. Create an environment variable with the key TABLE_NAME and the value UnicornLocation. Configure the function to use the WildRydesStreamProcessor_Location role created in the previous section
 
@@ -235,17 +328,23 @@ We will create a Lambda function called WildRydesStreamProcessor_Location that w
 
 1. Scroll down to the Function code section.
 
-1. S7.	Select Node.js 6.10 or higher  from Runtime.
+1. Click the [link/URL](https://github.com/heremaps/ devrel-workshops/aws-serverless/DataProcessing/5_HERE_DataProcessing_Extension/Kineses2DynamoDB/KinessesDB.zip) to download the Zip file which contains Lambda function along with dependency modules 
+
+1. In Code entry type dropdown Upload a .ZIP file option. Browse and select to upload the zip file which we downloaded in the previous step
+
+	![Deploy SAR Screenshot](../5_HERE_DataProcessing_Extension/Geocode_images/NewTest8.png)
+	
+	![Deploy SAR Screenshot](../5_HERE_DataProcessing_Extension/Geocode_images/NewTest9.png)
+
+1. Click on Save button in the Right Top corner of the page. It extracts the files internally
 
 1. Scroll down to the Function code section to replace the existing code in the index.js.
 
-1. Copy and paste the JavaScript code from the below [URL](https://github.com/heremaps/devrel-workshops/blob/master/aws-serverless/DataProcessing/5_HERE_DataProcessing_Extension/Kineses2DynamoDB/index.js) into the code editor.
+1. In “index.js” file find the “url” variable in line number 30 and paste the API endpoint which you created and copied in Step-2.
 
-   
-
-1. In your new code find the “FunctionName” variable and paste the function name which you copied in Step-1.
-
-          Eg:- FunctionName: ‘serverlessrepo-Geocode-GeocodeFunction-8UY78GHJIUGYT’
+          	![Deploy SAR Screenshot](../5_HERE_DataProcessing_Extension/Geocode_images/NewTest10.png)
+		
+		let url = ‘https://xx22yyxwe9.execute-api.eu-west-1.amazonaws.com/Test/geocoder’
 
 1. In the Environment variables section, enter an environment variable with Key as TABLE_NAME and Value as UnicornLocation.
 
