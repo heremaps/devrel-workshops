@@ -232,7 +232,7 @@ We need to create an API Endpoint to invoke and access the Lambda function which
 
 
 
-### 2. Create an Amazon DynamoDB table
+### 3. Create an Amazon DynamoDB table
 
 We need to create a Dynamo DB table to store the WildRydes Kinesis stream data along with address for the corresponding Latitude & Longitude. 
 
@@ -255,7 +255,7 @@ We need to create a Dynamo DB table to store the WildRydes Kinesis stream data a
      
 </p></details>
 
-### 3. Create an IAM role for your Lambda function
+### 4. Create an IAM role for your Lambda function
 
 Use the IAM console to create a new role. Name it "WildRydesStreamProcessorRole_Location" and select Lambda for the role type. Attach the managed policy called AWSLambdaKinesisExecutionRole to this role in order to grant permissions for your function to read from Amazon Kinesis streams and to log to Amazon CloudWatch Logs. Create a policy that allows dynamodb:BatchWriteItem access to the DynamoDB table created in the last section and attach it to the new role.
 
@@ -307,9 +307,9 @@ In Account, enter your AWS Account ID which is a twelve-digit number, e.g.: 1234
      
 </p></details>
 
-### 4. Create your Lambda function
+### 5. Create your Lambda function
 
-We will create a Lambda function called WildRydesStreamProcessor_Location that will be triggered whenever a new record is available in the WildRydes stream. Use the provided [index.js](https://github.com/heremaps/devrel-workshops/blob/master/aws-serverless/DataProcessing/5_HERE_DataProcessing_Extension/Kineses2DynamoDB/index.js) implementation for your function code. Create an environment variable with the key TABLE_NAME and the value UnicornLocation. Configure the function to use the WildRydesStreamProcessor_Location role created in the previous section
+We will create a Lambda function called WildRydesStreamProcessor_Location that will be triggered whenever a new record is available in the WildRydes stream. Use the provided [link to download zip file](https://github.com/heremaps/devrel-workshops/aws-serverless/DataProcessing/5_HERE_DataProcessing_Extension/Kineses2DynamoDB/KinessesDB.zip) to implement for your function code. Create an environment variable with the key TABLE_NAME and the value UnicornLocation. Configure the function to use the WildRydesStreamProcessor_Location role created in the previous section
 
 <details>
 <summary><strong>Step-by-step instructions (expand for details)</strong></summary><p>
@@ -328,7 +328,7 @@ We will create a Lambda function called WildRydesStreamProcessor_Location that w
 
 1. Scroll down to the Function code section.
 
-1. Click the [link/URL](https://github.com/heremaps/ devrel-workshops/aws-serverless/DataProcessing/5_HERE_DataProcessing_Extension/Kineses2DynamoDB/KinessesDB.zip) to download the Zip file which contains Lambda function along with dependency modules 
+1. Click the [Link/URL](https://github.com/heremaps/devrel-workshops/aws-serverless/DataProcessing/5_HERE_DataProcessing_Extension/Kineses2DynamoDB/KinessesDB.zip) to download the Zip file which contains Lambda function along with dependency modules 
 
 1. In Code entry type dropdown Upload a .ZIP file option. Browse and select to upload the zip file which we downloaded in the previous step
 
