@@ -47,8 +47,8 @@ exports.geocodeGET = (event, context, callback) => {
   console.log(`>>> HERE_API_APP_ID: ${HERE_API_APP_ID}`);
   console.log(`>>> HERE_API_APP_CODE: ${HERE_API_APP_CODE}`);
 
-  //const searchtext = event.pathParameters.searchtext;
-  const searchtext = event.pathParameters.prox;
+  //const searchtext = event.pathParameters.prox;
+  const searchtext = event.queryStringParameters.prox;
   console.log(`>>> searchtext: ${searchtext}`);
   const addattr = "&mode=retrieveAddresses&maxresults=1";
   const url = `${HERE_API_URL}?app_id=${HERE_API_APP_ID}&app_code=${HERE_API_APP_CODE}&prox=${searchtext}`+addattr;

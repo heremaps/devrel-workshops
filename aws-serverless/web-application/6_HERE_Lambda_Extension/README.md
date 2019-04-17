@@ -1,6 +1,6 @@
 # Module 6: Location Services with AWS Lambda for Web Applications
 
-This module is an optional extension to the popular [AWS Workshop Series for building web applications](https://github.com/aws-samples/aws-serverless-workshops/tree/master/WebApplication). This module picks up directly after the optional 5th module in the series and requires completion of modules 1 through 4.
+This module is an optional extension to the popular [AWS Workshop Series for building web applications](https://github.com/aws-samples/aws-serverless-workshops/tree/master/WebApplication). This module picks up directly after the 5th module in the series and requires completion of modules 1 through 4.
 
 In this 6th module you are going to learn about extending your web applications with serverless applications from the AWS Serverless Application Repository (SAR).
 
