@@ -30,16 +30,18 @@ We'll be monitoring the channel called #xyz.
 
 *60min*
 
-In this section we'll walk through a live demo of:
+### Watch
 
 - upload GeoJSON data to HERE XYZ
 - style a map, including conditionally based on properties
 - publish a map for others to view
 
+### Try yourself
+
 Once the demo is complete, we encourage you, on your own, to complete this beginner activity:
 
 - [ ] Create a free [XYZ account](https://xyz.here.com) and log into XYZ Studio
-- [ ] Download Data (examples below), Upload to Studio, Make a Map
+- [ ] Download Data, Upload to Studio, Make a Map
 - [ ] Publish Map and Share It
 
 Data Sources:
@@ -57,29 +59,34 @@ Resources for more help:
 
 *30min*
 
-Using XYZ with other tools and renders (30 mins)
+### Watch
 
-- mapshaper
-  - converting state plane
-  - simplify polygons
-- Tangram
-  - show vector tile endpoint
+- [ ] mapshaper
+  - [ ]converting state plane
+  - [ ] simplify polygons
+- [ ] Preview data with GeoJSON viewer
+- [ ] Explore properties with space invader preview
+
+### Try yourself
+
+- [ ]add a shapefile (tectonic plates) with the CLI, add that space to the earthquake map in Studio
+- [ ]import csv (unusual lat/lon fields)
+- [ ]add tags during upload
+- [ ]streaming large files
+
+## Interactive Web Maps
+
+*45 min*
+
+Intermediate Activity:
+
+- [ ]Upload geojsonl
+- [ ]Tangram
+  - To create a map run, `npx tangram-make {directory name} {space id} {xyz token}`
   - show tags
 - Leaflet
 - point to Stamen examples
 - QGIS XYZ plugin (reading from earthquake data, some sort of GIS magic -- PIP?)
-
-## Interactive Web Maps
-
-*60 min*
-
-Intermediate Activity:
-- add a shapefile (tectonic plates) with the CLI, add that space to the earthquake map in Studio
-- import csv (unusual lat/lon fields)
-- add tags during upload
-- streaming large files
-- geojsonl
-- space invader preview
 
 ## HERE XYZ APIs and HERE Location Services
 
