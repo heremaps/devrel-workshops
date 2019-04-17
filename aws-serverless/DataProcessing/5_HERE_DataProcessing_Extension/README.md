@@ -307,7 +307,7 @@ In Account, enter your AWS Account ID which is a twelve-digit number, e.g.: 1234
 
 ### 5. Create your Lambda function
 
-We will create a Lambda function called **WildRydesStreamProcessor_Location** that will be triggered whenever a new record is available in the WildRydes stream. Use the provided [link to download zip file](https://github.com/heremaps/devrel-workshops/aws-serverless/DataProcessing/5_HERE_DataProcessing_Extension/Kineses2DynamoDB/KinessesDB.zip) to implement for your function code. Create an environment variable with the key TABLE_NAME and the value UnicornLocation. Configure the function to use the WildRydesStreamProcessor_Location role created in the previous section
+We will create a Lambda function called **WildRydesStreamProcessor_Location** that will be triggered whenever a new record is available in the WildRydes stream. Use the provided [link to download zip file](../5_HERE_DataProcessing_Extension/Kineses2DynamoDB/KinessesDB.zip) to implement for your function code. Create an environment variable with the key TABLE_NAME and the value UnicornLocation. Configure the function to use the WildRydesStreamProcessor_Location role created in the previous section
 
 <details>
 <summary><strong>Step-by-step instructions (expand for details)</strong></summary><p>
@@ -326,7 +326,7 @@ We will create a Lambda function called **WildRydesStreamProcessor_Location** th
 
 1. Scroll down to the **Function code section**.
 
-1. Click the [Link/URL](https://github.com/heremaps/devrel-workshops/aws-serverless/DataProcessing/5_HERE_DataProcessing_Extension/Kineses2DynamoDB/KinessesDB.zip) to download the Zip file which contains Lambda function along with dependency modules 
+1. Click the [Link/URL](../5_HERE_DataProcessing_Extension/Kineses2DynamoDB/KinessesDB.zip) to download the Zip file which contains Lambda function along with dependency modules
 
 1. In **Code entry type** dropdown select **Upload a .ZIP file** option. Browse and select the zip file which we downloaded in the previous step to upload 
 
