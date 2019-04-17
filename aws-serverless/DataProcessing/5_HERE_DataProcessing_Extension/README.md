@@ -84,8 +84,6 @@ In this step you are going to deploy the HERE Geocode function using the AWS con
 
 1. In next page find “Resources” tab at the bottom of the page. Click on “GeocodeFunction”.
 
-1. Copy the function name from this page for later use (Step-5), function name looks like "serverlessrepo-Geocode-GeocodeFunction-E8ODE3KJNEROF"
-
 	![Deploy SAR Screenshot](../5_HERE_DataProcessing_Extension/Geocode_images/test_app1.PNG)
 
 1. Scroll down the page to “Function code” section, In the text editor you need to replace the existing code in ‘geocode.js’ with the code available at the [URL](https://github.com/heremaps/devrel-workshops/blob/master/aws-serverless/DataProcessing/5_HERE_DataProcessing_Extension/ReverseGeoCode/index.js).
