@@ -90,6 +90,9 @@ here xyz create -t "my new space"
 ```
 here xyz upload SPACE-ID -f FILE-NAME
 ```
+Here's a shapefile of bike lanes in San Diego: http://seshat.datasd.org/sde/bike_route/bike_routes_datasd.zip
+
+
 5. View with GeoJSON viewer to understand shape of data
 ```
 here xyz show SPACE-ID -w
