@@ -8,7 +8,9 @@ geared towards those with basic experience in web development.
 [Workshop Pass Registration](https://ti.to/foss4g-na-2019/foss4g-na-2019-san-diego/with/fawgwk87gpu)
 
 During the workshop, attendees will be issued a challenge to utilize the new
-XYZ data management service. The submission with the most creative challenge
+XYZ data management service.
+
+The submission with the most creative challenge
 submission will win 1 of 3 new Super NES Classic gaming systems.
 
 Be sure to join our slack space to ask any questions: [t.her.is/Slack](t.her.is/Slack)
@@ -96,17 +98,17 @@ here xyz show SPACE-ID -v
 7. Use [mapshaper](https://mapshaper.org/) to convert planes and simplify polygons
 
 8. Upload with CLI
+9. Upload CSV with unusual lat/lon fields. (streetlights data)
 
 __Activity__
 
 - [ ] upload a shapefile (tectonic plates) with the CLI
 - [ ] add that space to the earthquake map in Studio
-- [ ] import csv (unusual lat/lon fields)
 - [ ] add tags during upload
-- [ ] streaming large files
 
 __Data sources__
 
+- [San Diego Streetlights CSV](streetlights.csv)
 - [SF Lands shapefile](sflnds_current.zip)
 - [Tectonic plates GeoJSON](https://github.com/fraxen/tectonicplates/tree/master/GeoJSON)
 
@@ -133,17 +135,17 @@ python -m SimpleHTTPServer 8888
 
 __Activity__
 
-- [ ]Upload geojsonl
-- [ ]Tangram
-  - To create a map run, `npx tangram-make {directory name} {space id} {xyz token}`
-  - show tags
-- Leaflet
-- point to Stamen examples
+- [ ] Run `tangram-make` to create the boilerplate code for a Tangram map
+- [ ] Show data from XYZ Space on your map
+- [ ] Publish to Github pages in order to potentially win a gaming system.
+
 
 __Resources__
 
 - [Tangram documentation](https://tangrams.readthedocs.io/en/latest/)
+- [Tangram and XYZ Space examples](https://github.com/heremaps/xyz-showcase)
 - [XYZ Hub APIs documentation](https://www.here.xyz/api/)
+-
 
 
 ## QGIS plugin
