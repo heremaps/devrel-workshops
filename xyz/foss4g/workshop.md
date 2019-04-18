@@ -150,7 +150,13 @@ __Resources__
 
 ## QGIS plugin
 
-- QGIS XYZ plugin (reading from earthquake data, some sort of GIS magic -- PIP?)
+- [Install QGIS](https://qgis.org/en/site/forusers/download.html) 
+- QGIS XYZ plugin from Plugin Directory
+- enter your token
+- pick your space
+- do some QGIS things
+- upload data back to XYZ
+
 
 ## HERE XYZ APIs and HERE Location Services
 
