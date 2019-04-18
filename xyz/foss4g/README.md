@@ -24,9 +24,9 @@ We'll be monitoring the channel called #xyz.
 - Activity: Make a Map with XYZ Studio
 - XYZ CLI Overview
 - Activity: Upload data with the CLI
+- QGIS Plugin
 - Interactive Web Maps with XYZ & Tangram
 - Activity: Make a Tangram Map
-- QGIS Plugin
 - XYZ APIs and HERE Location Services
 
 # Topics
@@ -115,6 +115,16 @@ __Data sources__
 __Resources__
 - [HERE CLI Documentation](https://www.here.xyz/cli/)
 
+## QGIS plugin
+
+- [Install QGIS](https://qgis.org/en/site/forusers/download.html) 
+- QGIS XYZ plugin from Plugin Directory
+- enter your token
+- pick your space
+- do some QGIS things
+- upload data back to XYZ
+
+
 ## Interactive Web Maps
 
 *45 min*
@@ -145,24 +155,14 @@ __Resources__
 - [Tangram documentation](https://tangrams.readthedocs.io/en/latest/)
 - [Tangram and XYZ Space examples](https://github.com/heremaps/xyz-showcase)
 - [XYZ Hub APIs documentation](https://www.here.xyz/api/)
--
-
-
-## QGIS plugin
-
-- [Install QGIS](https://qgis.org/en/site/forusers/download.html) 
-- QGIS XYZ plugin from Plugin Directory
-- enter your token
-- pick your space
-- do some QGIS things
-- upload data back to XYZ
 
 
 ## HERE XYZ APIs and HERE Location Services
+
+(Optional, if time)
 
 *30 mins*
 
 - routing
 - geocoding
 
-Advanced Activity:
