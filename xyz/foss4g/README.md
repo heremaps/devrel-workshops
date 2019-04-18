@@ -13,7 +13,7 @@ XYZ data management service.
 The submission with the most creative challenge
 submission will win 1 of 3 new Super NES Classic gaming systems.
 
-Be sure to join our slack space to ask any questions: [t.her.is/Slack](t.her.is/Slack)
+Be sure to join our slack space to ask any questions: [https://t.her.is/Slack](t.her.is/Slack)
 
 We'll be monitoring the channel called #xyz.
 
