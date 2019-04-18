@@ -75,6 +75,9 @@ __Demonstration__
 ```
 npm install -g @here/cli
 ```
+
+If you don't have Node installed, detailed instructions are here: https://www.here.xyz/cli/
+
 2. Configure CLI with your account
 ```
 here configure account
