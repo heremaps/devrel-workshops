@@ -167,14 +167,14 @@ __Resources__
 
 1. Grab `AppId` and `AppCode` credentials from [developer.here.com](https://developer.here.com)
 2. Before your Tangram initialization, insert your here credentials:
-```
+```javascript
 const here = {
    id: 'YOUR-HERE-ID',
    code: 'YOUR-HERE-CODE'
 }
 ```
 3. Add the code to make a routing request and display the polyline in Leaflet:
-```
+```javascript
 async function onMapClick (evt) {
    if (evt.feature) {
       const start = '41.881832,-87.623177';
