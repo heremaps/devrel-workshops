@@ -165,6 +165,32 @@ __Resources__
 
 *30 mins*
 
-- routing
-- geocoding
+1. Grab `AppId` and `AppCode` credentials from [developer.here.com](https://developer.here.com)
+2. Before your Tangram initialization, insert your here credentials:
+```
+const here = {
+   id: 'YOUR-HERE-ID',
+   code: 'YOUR-HERE-CODE'
+}
+```
+3. Add the code to make a routing request and display the polyline in Leaflet:
+```
+async function onMapClick (evt) {
+   if (evt.feature) {
+      const start = '41.881832,-87.623177';
+      const leafletClick = evt.leaflet_event.latlng;
+      const end = `${leafletClick.lat},${leafletClick.lng}`;
+
+      const shape = await route(start, end);
+      const poly = L.polyline(shape).addTo(map)
+   }
+}
+
+async function route(start, end) {
+   const url = `https://route.api.here.com/routing/7.2/calculateroute.json?app_id=${here.id}&app_code=${here.code}&waypoint0=geo!${start}&waypoint1=geo!${end}&mode=fastest;car;traffic:disabled&routeattributes=shape`
+   const response = await fetch(url);
+   const data = await response.json();
+   return await data.response.route[0].shape.map(x => x.split(","));
+}
+```
 
