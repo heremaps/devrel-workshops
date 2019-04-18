@@ -135,7 +135,9 @@ __Demonstration__
 npx tangram-make {directory name} {space id} {xyz token}
 ```
 `{directory name}` is the name of the new directory that will be created. `{space id}` is the ID of the XYZ Space of the data you will show. `{xyz token}` is your XYZ access token.
+
 2. Enter into the new directory with `cd {directory name}`
+
 3. Start a local server to view the map
 ```
 python -m SimpleHTTPServer 8888
