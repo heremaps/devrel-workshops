@@ -82,16 +82,21 @@ If you don't have Node installed, detailed instructions are here: https://www.he
 ```
 here configure account
 ```
+   (use the same email and password as your Studio account)
+   
 3. Create an XYZ Space
 ```
-here xyz create -t "my new space"
+here xyz create -t "xyz workshop demo" -d "a meaningful description you'll be happy to have later"
 ```
-4. Upload data
-```
-here xyz upload SPACE-ID -f FILE-NAME
-```
-Here's a shapefile of bike lanes in San Diego: http://seshat.datasd.org/sde/bike_route/bike_routes_datasd.zip
+4. Upload a shapefile
 
+  - download [Tectonic Plates](https://www.sciencebase.gov/catalog/item/4f4e4a48e4b07f02db62303e)
+  - decompress `Plate_Boundaries.zip`
+  - change directories
+
+```
+here xyz upload SPACE-ID -f Plate_Boundaries.shp
+```
 
 5. View with GeoJSON viewer to understand shape of data
 ```
@@ -101,10 +106,47 @@ here xyz show SPACE-ID -w
 ```
 here xyz show SPACE-ID -v
 ```
-7. Use [mapshaper](https://mapshaper.org/) to convert planes and simplify polygons
+   Look for that space in your XYZ Studio and add it to your earthquake map!
 
-8. Upload with CLI
-9. Upload CSV with unusual lat/lon fields. (streetlights data)
+7. Use [mapshaper](https://mapshaper.org/) to convert from local NAD83-style coordinates and simplify polygons
+   - download mapshaper: `npm install mapshaper`
+   - download this [NAD83 shapefile of bike lanes in San Diego](http://seshat.datasd.org/sde/bike_route/bike_routes_datasd.zip)
+   - decompress the file and cd to the bike_routes_datasd directory
+   - convert to GeoJSON: `mapshaper bike_routes_datasd.shp -proj wgs84 -o bike_routes_datasd.geojson`
+   
+8. Upload it with the CLI
+
+```
+here xyz upload SPACE-ID -f bike_routes_datasd.geojson
+```
+   
+   Bonus challenge: pipe mapshaper output to the CLI!
+   
+   `mapshaper bike_routes_datasd.shp -proj wgs84 -o format=geojson | here xyz upload SPACE-ID`
+
+
+9. Upload CSV with unusual lat/lon fields. 
+   
+   - download this CSV of [streetlights in San Diego](https://github.com/heremaps/devrel-workshops/raw/master/xyz/foss4g/streetlights.csv)
+   - we look for common column names for latitude and longitude -- `lat,lon,lng,x,y` -- but if your file has an uncommon column name, you can specify it with `-x` and `-y`. In this file, latitude/y values are in a column called `why` and longitude/x values are in `ex`:
+   
+   `here xyz upload SPACE-ID -f streetlights.csv -x ex -y why
+   
+10. Stream a large GeoJSON, GeoJSONL, or CSV to an XYZ space using `-s`:
+
+   - download a state or province from the reverse-geocoded [Microsoft Buildings Footprints dataset](https://www.here.xyz/microsoft-buildings/)
+   - upload to XYZ, and use `-p` to tag by geojson properties so you can later filter the data server-side by admins:
+   
+   `here xyz upload SPACE-ID -f region.geojson -p postalcode,neighborhood,locality,county -s` 
+   
+   - open the map in the XYZ Space Invader using `show -v` to filter features by tags and color features by property:
+   
+   `here xyz show SPACE-ID -v`
+   
+   - you can use `-t` to limit the data by admin region:
+   
+   `here xyz show SPACE-ID -v -t postalcode@94110`
+   `here xyz show SPACE-ID -v -t county@madison`
 
 __Activity__
 
