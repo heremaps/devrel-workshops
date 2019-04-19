@@ -78,12 +78,10 @@ npm install -g @here/cli
 
 If you don't have Node installed, detailed instructions are here: https://www.here.xyz/cli/
 
-2. Configure CLI with your account
+2. Configure the CLI with your XYZ account information (same as Studio)
 ```
 here configure account
-```
-   (use the same email and password as your Studio account)
-   
+```   
 3. Create an XYZ Space
 ```
 here xyz create -t "xyz workshop demo" -d "a meaningful description you'll be happy to have later"
@@ -106,7 +104,7 @@ here xyz show SPACE-ID -w
 ```
 here xyz show SPACE-ID -v
 ```
-   Look for that space in your XYZ Studio and add it to your earthquake map!
+   - Look for that space in your XYZ Studio and add it to your earthquake map!
 
 7. Use [mapshaper](https://mapshaper.org/) to convert from local NAD83-style coordinates and simplify polygons
    - download mapshaper: `npm install mapshaper`
@@ -120,7 +118,7 @@ here xyz show SPACE-ID -v
 here xyz upload SPACE-ID -f bike_routes_datasd.geojson
 ```
    
-   Bonus challenge: pipe mapshaper output to the CLI!
+   - Bonus challenge: pipe mapshaper output to the CLI!
    
    `mapshaper bike_routes_datasd.shp -proj wgs84 -o format=geojson | here xyz upload SPACE-ID`
 
@@ -130,7 +128,7 @@ here xyz upload SPACE-ID -f bike_routes_datasd.geojson
    - download this CSV of [streetlights in San Diego](https://github.com/heremaps/devrel-workshops/raw/master/xyz/foss4g/streetlights.csv)
    - we look for common column names for latitude and longitude -- `lat,lon,lng,x,y` -- but if your file has an uncommon column name, you can specify it with `-x` and `-y`. In this file, latitude/y values are in a column called `why` and longitude/x values are in `ex`:
    
-   `here xyz upload SPACE-ID -f streetlights.csv -x ex -y why
+   `here xyz upload SPACE-ID -f streetlights.csv -x ex -y why`
    
 10. Stream a large GeoJSON, GeoJSONL, or CSV to an XYZ space using `-s`:
 
@@ -143,10 +141,11 @@ here xyz upload SPACE-ID -f bike_routes_datasd.geojson
    
    `here xyz show SPACE-ID -v`
    
-   - you can use `-t` to limit the data by admin region:
+   - you can also use `-t` to limit the data by admin region:
    
    `here xyz show SPACE-ID -v -t postalcode@94110`
    `here xyz show SPACE-ID -v -t county@madison`
+   
 
 __Activity__
 
