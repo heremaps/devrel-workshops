@@ -14,6 +14,8 @@ HERE workshops exist for the following topics:
 - [SAP](sap)
   - [SAPUI5 Maps Intro](sap/intro-maps/README.md)
   - [SAPUI5 Geocoder](sap/intro-geocoder/README.md)
+- [AWS](aws)
+  - [Intro to Amazon Lex](aws/intro-lex/README.md)
 - [AWS Serverless](aws-serverless) // HERE's Extensions to the Popular [AWS WildRydes Workshops](https://github.com/aws-samples/aws-serverless-workshops)
   - [AWS Serverless Extension](aws-serverless/web-application/6_HERE_Lambda_Extension)
   - [AWS Serverless DataProcessing Extension](aws-serverless/DataProcessing/5_HERE_DataProcessing_Extension)
