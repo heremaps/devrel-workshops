@@ -10,7 +10,7 @@ but don’t know how? In this workshop we’ll create some beautiful maps such a
 - flight traffic from popular airports
 - smart streetlights in San Diego
 - bike lanes in Chicago
-- etc.
+- [etc...](https://github.com/heremaps/xyz-showcase)
 
 Bring your own data, as you can adapt and fork these examples to view the
 location of your assets around the world.
@@ -50,7 +50,7 @@ __Activity__
 
 *20 min*
 
-1. Visit [XYZ Studio](https://xyz.here.com) to create an account
+1. Visit [XYZ Studio](https://xyz.here.com) to create a free account
 2. Download something from the data sources listed below
 3. Upload to XYZ Studio
 4. Customize your map by changing basemap, colors, labels, cards
@@ -75,7 +75,6 @@ __Demonstration__
 - create a space and upload data with `here` CLI
 - initialize a tangram project
 - use tangram play to customize look and feel
-- view of some other maps in the [HERE XYZ Showcase](https://github.com/heremaps/xyz-showcase)
 
 __Activity__
 
@@ -104,7 +103,7 @@ __Resources for more help:__
 - [Tangram documentation](https://tangrams.readthedocs.io/en/latest/)
 - [XYZ Hub APIs documentation](https://www.here.xyz/api/)
 - [Mapping Solar Energy Webinar](https://youtu.be/qi5cWF_TxCw)
-- [Mapping Solar Energy Tutorial(https://codelabs.here.xyz/tutorial/07-Green-Amsterdam#0) - Tangram
+- [Mapping Solar Energy Tutorial](https://codelabs.here.xyz/tutorial/07-Green-Amsterdam#0) - Tangram
 - [Mapping Air Quality Webinar](https://youtu.be/kZo1BQHWSS8)
 - [Mapping Air Quality Tutorial](https://codelabs.here.xyz/tutorial/06-Air-Quality-In-Madrid#0) - Leaflet
 - [Mapping Live Flights Webinar](https://youtu.be/E78Pw2d-kpM)
