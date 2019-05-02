@@ -6,3 +6,4 @@ Pillow
 BeautifulSoup4
 nltk
 ipyleaflet
+geojson
