@@ -7,7 +7,7 @@ comfortable with some basic geospatial concepts using Python libraries.
 # Pre-Requisites
 
 - Sign up for a [free developer account with this link](https://developer.here.com/events/pycon2019) for 250k transactions every month
-- Install the libraries that we'll use: `pip install -f requirements.txt`
+- Install the libraries that we'll use: `pip install -r requirements.txt`
 - Try the [heredevs slack](https://t.her.is/Slack) #python channel for questions, etc.
 
 # Agenda
