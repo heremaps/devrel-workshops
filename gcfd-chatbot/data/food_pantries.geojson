@@ -1,0 +1,104 @@
+{
+   "type": "FeatureCollection",
+   "features": [{
+         "id": "a2c91f4bfa1e8907199b3eaa1da6b138",
+         "type": "Feature",
+         "properties": {
+            "Zip": "60160",
+            "City": "Melrose Park",
+            "Name": "Lighthouse of Hope",
+            "State": "IL",
+            "Phone number": "(708) 831-5370",
+            "Operating hours": "Saturday: 9:30 am - 11:30 am",
+            "Distribution address": "1719 W North Ave"
+         },
+         "geometry": {
+            "type": "Point",
+            "coordinates": [
+               -87.85532,
+               41.9080299
+            ]
+         }
+      },
+      {
+         "id": "315cd45bd60e04060520507520f52742",
+         "type": "Feature",
+         "properties": {
+            "Zip": "60651",
+            "City": "Chicago",
+            "Name": "Pine Avenue United Church",
+            "State": "IL",
+            "Phone number": "(773) 287-4777",
+            "Operating hours": "Tuesday:  9:30 am  - 11:30 am",
+            "Distribution address": "1015 N Pine Ave"
+         },
+         "geometry": {
+            "type": "Point",
+            "coordinates": [
+               -87.7636799,
+               41.89876
+            ]
+         }
+      },
+      {
+         "id": "2b0ad15478c417efb84312010cd7a816",
+         "type": "Feature",
+         "properties": {
+            "Zip": "60637",
+            "City": "Chicago",
+            "Name": "Project Care",
+            "State": "IL",
+            "Phone number": "(773) 881-8296",
+            "Operating hours": "Thursday: 10:00 am - 12:00 pm",
+            "Distribution address": "710 E 62nd St"
+         },
+         "geometry": {
+            "type": "Point",
+            "coordinates": [
+               -87.60796,
+               41.78219
+            ]
+         }
+      },
+      {
+         "id": "7d2ffd2b725c17fd5dcfc156a33e2c7b",
+         "type": "Feature",
+         "properties": {
+            "Zip": "60628",
+            "City": "Chicago",
+            "Name": "Colonial Village Church of Christ",
+            "State": "IL",
+            "Phone number": "(773) 821-5197",
+            "Operating hours": "Monday: 10:00am-12:00pm",
+            "Distribution address": "12814 S. Lowe"
+         },
+         "geometry": {
+            "type": "Point",
+            "coordinates": [
+               -87.63775,
+               41.66092
+            ]
+         }
+      },
+      {
+         "id": "99bee8a17d3e5ad7e90c461c946a9a55",
+         "type": "Feature",
+         "properties": {
+            "Zip": "60629",
+            "City": "Chicago",
+            "Name": "Sanad Organization",
+            "State": "IL",
+            "Phone number": "(773) 436-7989",
+            "Operating hours": "1st & 3rd Friday: 9:00 am - 11:00 am",
+            "Distribution address": "3302 W 63rd St"
+         },
+         "geometry": {
+            "type": "Point",
+            "coordinates": [
+               -87.70583,
+               41.77893
+            ]
+         }
+      }
+   ]
+}
