@@ -37,12 +37,12 @@ The function app in this ARM Template consists of the following HERE Location Se
 
 All users of HERE APIs must obtain authentication and authorization credentials and provide them as values for the parameters HERE App ID and HERE App Code in the HERE Credentials section in Azure’s template deployment page.
 
-To obtain the credentials for the deployment of HERE Maps & Location Services Data Streams, please visit [here](https://developer.here.com/?create=Freemium-Basic&keepState=true&step=account) to register for FREE with HERE.
+To obtain the credentials for the deployment of HERE Maps & Location Services Data Streams, please visit [here](https://developer.here.com/ref/azure_marketplace_datastream?create=Freemium-Basic) to register for FREE with HERE.
 
 <details>
 <summary><strong>Step-by-step instructions (expand for details)</strong></summary><p>
 
-1. Go to this [link](https://developer.here.com/?create=Freemium-Basic&keepState=true&step=account) to register for FREE with HERE.
+1. Go to this [link](https://developer.here.com/ref/azure_marketplace_datastream?create=Freemium-Basic) to register for FREE with HERE.
 
 1. Provide your basic details and register your HERE account
 
@@ -96,7 +96,7 @@ The below steps help you deploy HERE Maps & Locations Services Data Streams Temp
 
 	![Template Deployment Page – Basic Section – Create new Resource Group](../Images/5_TemplateDeploymentPage–BasicSection–CreatenewResourceGroup.png)
 
-1. You now need to provide HERE credentials (HERE App ID and HERE App Code) which are pre-requisite to access HERE resources. If you already have HERE credentials available with you, provide the same and click **OK**. If you don’t have HERE credentials, please visit here(https://developer.here.com) to register for FREE with HERE. You also need to select a Storage option, you can either select any existing Storage or continue with a newly created one.
+1. You now need to provide HERE credentials (HERE App ID and HERE App Code) which are pre-requisite to access HERE resources. If you already have HERE credentials available with you, provide the same and click **OK**. If you don’t have HERE credentials, please visit here(https://developer.here.com/ref/azure_marketplace_datastream?create=Freemium-Basic) to register for FREE with HERE. You also need to select a Storage option, you can either select any existing Storage or continue with a newly created one.
 
 	![Template Deployment Page – HERE Credentials Section](../Images/6_TemplateDeploymentPage–HERECredentialsSection.png)
 
