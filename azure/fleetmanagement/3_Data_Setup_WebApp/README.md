@@ -22,7 +22,7 @@ Download the script files from the link below. Next we will walk you through con
 <details>
 <summary><strong>Step-by-step instructions (expand for details)</strong></summary><p>
 
-1. Download the zip file (fleetdashboard.zip) files.
+1. Download the zip file [FleetDashboard.zip](./FleetDashboard.zip) files.
 
 1. Save it in to your local machine.
 
