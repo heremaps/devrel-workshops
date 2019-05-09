@@ -31,7 +31,7 @@ In this step you will download the script files from the link below and then we 
 <details>
 <summary><strong>Step-by-step instructions (expand for details)</strong></summary><p>
 
- 1. Download the zip file (Producer.zip) and save it on your local machine.
+ 1. Download the zip file [Producer.zip](./Producer.zip) and save it on your local machine.
 
 
 1. Open **Azure Portal** home page and login with your credentials.
