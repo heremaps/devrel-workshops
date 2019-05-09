@@ -92,8 +92,6 @@ In our previous modules we have created a Web App. We assume that you have compl
 
 **Congratulations** you have successfully completed the workshop!
 
-After you have completed the workshop you can delete all of the resources that were created by following the [cleanup guide][cleanup].
-
 After you have completed this workshop, be sure you delete all of the resources that were created by following the [cleanup guide][cleanup].
 
 
