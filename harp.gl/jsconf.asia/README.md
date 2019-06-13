@@ -288,7 +288,6 @@ const omvDataSource = new harp.OmvDataSource({
    baseUrl: "https://xyz.api.here.com/tiles/herebase.02",
    apiFormat: harp.APIFormat.XYZOMV,
    styleSetName: "tilezen",
-   maxZoomLevel: 17,
    authenticationCode: 'YOUR-XYZ-TOKEN HERE',
 });
 map.addDataSource(omvDataSource);
@@ -366,7 +365,7 @@ mapControls.setRotation(6.3, 50); //rotation, pitch
 ```
 
 
-The first parameter of `setRotation()` is the __rotation__, which can be between `0` and `360`. The second parameter is the __pitch angle__, which be between `0` and `90`.
+The first parameter of `setRotation()` is the __rotation__, which can be between `0` and `360` degrees. The second parameter is the __pitch angle__, which be between `0` and `90` degrees.
 
 ### Changing the map's projection
 
@@ -375,18 +374,31 @@ The default projection is the flat mercator.
 To change to the globe projection, pass the following parameters in your constructor: 
 
 ```javascript
-const map = new MapView({
-   /*...*/
+const map = new harp.MapView({
+   canvas,
    theme: "https://unpkg.com/@here/harp-map-theme@latest/resources/berlin_tilezen_base_globe.json",
    projection: sphereProjection,
    maxVisibleDataSourceTiles: 400
 });
 ```
 
-And then make sure to use `GlobeControls` instead of `MapControls`:
+And then make sure to use `GlobeControls` instead of `MapControls`, while also deleting the previous map control code:
+
+# FIX THIS
 
 ```javascript
-const controls = new GlobeControls(map);
+
+/*
+Delete this:
+const ui = new harp.MapControlsUI(mapControls);
+canvas.parentElement.appendChild(ui.domElement);
+const mapControls = new harp.MapControls(map);
+mapControls.maxPitchAngle = 90;
+mapControls.setRotation(6.3, 50);
+*/
+
+/* Add this: */
+const controls = harp.GlobeControls(map);
 controls.enabled = true;
 ```
 
@@ -531,7 +543,6 @@ Create a new object from `OmvDataSource` called `globalRailroads`.
 const globalRailroads = new harp.OmvDataSource({
    baseUrl: "https://xyz.api.here.com/hub/spaces/hUJ4ZHJR/tile/web",
    apiFormat: harp.APIFormat.XYZSpace,
-   maxZoomLevel: 17,
    authenticationCode: 'AJXABoLRYHN488wIHnxheik', //Use this token!
 });
 ```
@@ -545,7 +556,6 @@ The above code will create and connect to the new data source, but we still need
 const globalRailroads = new harp.OmvDataSource({
    baseUrl: "https://xyz.api.here.com/hub/spaces/hUJ4ZHJR/tile/web",
    apiFormat: harp.APIFormat.XYZSpace,
-   maxZoomLevel: 17,
    authenticationCode: 'AJXABoLRYHN488wIHnxheik', //Use this token!
 });
 
