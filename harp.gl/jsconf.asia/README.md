@@ -19,7 +19,7 @@ You can also join the HERE Developer Slack space to ask questions online. To joi
 
 harp.gl is a beta product and we are always looking to improve it with your feedback. For any comments, suggestions, or bug reports, we encourage you to:
 - fill out this form: [harp.gl feedback](https://forms.gle/GhTVkruwsReNi3oH7)
-- or create an issue on the [harp.gl GitHub repository](https://github.com/heremaps/harp.gl)
+- or create an issue on the [harp.gl GitHub repository](https://github.com/heremaps/harp.gl/issues/new)
 
 ## Prerequisites
 
@@ -125,7 +125,7 @@ harp.gl has its own syntax for styling the map. The styling syntax lives inside 
 
 - the width for roads
 - the background color for water
-- the height of 3d buildings
+- the mulitplier of the height of 3d buildings
 
 You can take a look at a sample style sheet here: [https://unpkg.com/@here/harp-map-theme@latest/resources/berlin_tilezen_night_reduced.json](https://unpkg.com/@here/harp-map-theme@latest/resources/berlin_tilezen_night_reduced.json)
 
@@ -296,11 +296,17 @@ map.addDataSource(omvDataSource);
 
 __NOTE:__ be sure to swap out `YOUR-XYZ-TOKEN-HERE` for the token you obtained from the [XYZ Token Manager](https://xyz.api.here.com/token-ui/).
 
-Start up a local server and open your browser to `localhost:8888`:
+You can just run it with a simple server, for example in Python 2.x: 
 ```bash
 python -m SimpleHTTPServer 8888
 ```
+and in Python 3.x
 
+```bash
+python -m http.server 8888
+```
+
+Then navigate to: `localhost:8888`:
 ### Method 2: Install harp.gl modules through npm
 
 _These instructions are also available on the [harp.gl github repo](https://github.com/heremaps/harp.gl/blob/master/docs/GettingStartedGuide.md)._
@@ -340,6 +346,8 @@ map.setCameraGeolocationAndZoom(
 ```
 
 Try changing the map to where you come from!
+
+To find the coordinates of your city, take a look at this site: [latlong.net](https://www.latlong.net/place/seattle-wa-usa-2655.html)
 
 ### Changing the map's pitch and rotation
 
@@ -712,6 +720,57 @@ After clicking on the map a few times, you should have a result that looks like:
 
 Let's be honest, the simple cube on the map wasn't anything special. How about an animating 3D person?
 
+First, we'll need to add some additional three.js imports to the html. We'll be adding `inflate.min.js` and `FBXLoader.js`, which will help with loading the 3D object.
 
+__`index.html`__
+```html
+<head>
+   <!-- three.js and harp.js imports -->
+   <script src="https://threejs.org/examples/js/libs/inflate.min.js"></script>
+   <script src="https://threejs.org/examples/js/loaders/FBXLoader.js"></script>
+</head>
+```
 
-# Section 7: Interactivity
+Next, we'll load the 3D object using the `FBXLoader` we just imported to our html. 
+
+Inside of the `resources` directory, we've included a file called [`dancing.fbx`](resources/dancing.fbx). Make sure to download this into your directory so we can properly load it.
+
+```javascript
+const clock = new THREE.Clock();
+let mixer;
+
+//Initialize the loader
+const loader = new THREE.FBXLoader();
+loader.load('dancing.fbx', (obj) => {
+   mixer = new THREE.AnimationMixer(obj);
+
+   const action = mixer.clipAction(obj.animations[0]);
+   action.play();
+
+   obj.traverse(child => child.renderOrder = 10000);
+   obj.renderOrder = 10000;
+   obj.rotateX(Math.PI / 2);
+   obj.scale.set(2.3, 2.3, 2.3);
+   obj.name = "human";
+
+   //Assign the coordinates to the obj
+   obj.geoPosition = new harp.GeoCoordinates(1.285166, 103.863233);
+   map.mapAnchors.add(obj);
+});
+```
+
+Finally, we'll fire the animation to start.
+
+```javascript
+map.addEventListener(harp.MapViewEventNames.Render, () => {
+   if (mixer) {
+      const delta = clock.getDelta();
+      mixer.update(delta);
+   }
+});
+map.beginAnimation();
+```
+
+And you should see something like this:
+
+![dancing](img/dancing.gif)
