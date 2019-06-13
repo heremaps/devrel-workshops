@@ -241,7 +241,8 @@ touch index.html
 ```
 
 Copy and paste the following code into each of the files.
-`index.html`__
+
+__`index.html`__
 
 ```html
 <html>
@@ -367,7 +368,7 @@ To change to the globe projection, pass the following parameters in your constru
 
 ```javascript
 const map = new MapView({
-   /**/
+   /*...*/
    theme: "https://unpkg.com/@here/harp-map-theme@latest/resources/berlin_tilezen_base_globe.json",
    projection: sphereProjection,
    maxVisibleDataSourceTiles: 400
@@ -457,11 +458,6 @@ Download this file and save it into your project's directory.
 Let's add it to our map using this code:
 
 ```javascript
-
-/*
-TODO: THIS DOES NOT WORK
-*/
-
 fetch('wireless-hotspots.geojson')
 .then(data => data.json())
 .then(data => {
@@ -528,7 +524,7 @@ const globalRailroads = new harp.OmvDataSource({
    baseUrl: "https://xyz.api.here.com/hub/spaces/hUJ4ZHJR/tile/web",
    apiFormat: harp.APIFormat.XYZSpace,
    maxZoomLevel: 17,
-   authenticationCode: 'YOUR-XYZ-TOKEN-HERE',
+   authenticationCode: 'AJXABoLRYHN488wIHnxheik', //Use this token!
 });
 ```
 
@@ -542,7 +538,7 @@ const globalRailroads = new harp.OmvDataSource({
    baseUrl: "https://xyz.api.here.com/hub/spaces/hUJ4ZHJR/tile/web",
    apiFormat: harp.APIFormat.XYZSpace,
    maxZoomLevel: 17,
-   authenticationCode: 'AJXABoLRYHN488wIHnxheik',
+   authenticationCode: 'AJXABoLRYHN488wIHnxheik', //Use this token!
 });
 
 map.addDataSource(globalRailroads).then(() => {
