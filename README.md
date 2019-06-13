@@ -10,6 +10,7 @@ HERE workshops exist for the following topics:
 - [JavaScript](javascript)
   - [Intro by Michael Palermo](javascript/intro-palermo/README.md)
   - [Intro by Nic Raboy](javascript/intro-raboy/README.md)
+  - [Implementing location services in your web application](javascript/implementing-location-services-raboy)
 - [Vue.js](vue/README.md)
 - [SAP](sap)
   - [SAPUI5 Maps Intro](sap/intro-maps/README.md)
