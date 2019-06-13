@@ -7,6 +7,8 @@ This repository is meant to act as a workshop in-a-box for developer events such
 HERE workshops exist for the following topics:
 
 - [Angular](angular/README.md)
+- [harp.gl](harp.gl)
+   - [jsconf.asia](harp.gl/jsconf.asia)
 - [JavaScript](javascript)
   - [Intro by Michael Palermo](javascript/intro-palermo/README.md)
   - [Intro by Nic Raboy](javascript/intro-raboy/README.md)
