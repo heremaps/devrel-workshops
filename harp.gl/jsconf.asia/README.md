@@ -267,6 +267,9 @@ const canvas = document.getElementById('map');
 const map = new harp.MapView({
    canvas,
    theme: "https://unpkg.com/@here/harp-map-theme@latest/resources/berlin_tilezen_night_reduced.json",
+   //For tile cache optimization:
+   maxVisibleDataSourceTiles: 40, 
+   tileCacheSize: 100
 });
 
 map.setCameraGeolocationAndZoom(
@@ -769,7 +772,7 @@ loader.load('dancing.fbx', (obj) => {
 });
 ```
 
-Finally, we'll fire the animation to start.
+Finally, we'll fire up the animation:
 
 ```javascript
 map.addEventListener(harp.MapViewEventNames.Render, () => {
@@ -784,3 +787,32 @@ map.beginAnimation();
 And you should see something like this:
 
 ![dancing](img/dancing.gif)
+
+## Section 7 (The final challenge): Share you maps with us!
+
+With all the knowledge you've picked up in this workshop, we encourage you to create your own maps.ß
+
+What to make a map of? Here are some places you can access geojson data to get some inspiration! 
+- [USA open data](https://www.data.gov/)
+- [Singapore open data](https://data.gov.sg/)
+- [World Bank open data](https://data.worldbank.org/)
+- [Germany open data](https://www.govdata.de/)
+
+Once you've created your maps, create a new GitHub repository so you can publish your application to GitHub pages. For more information on publishing GitHub pages, please take a look at this [handy guide](https://help.github.com/en/articles/configuring-a-publishing-source-for-github-pages).
+
+Once your map is published, please share it with us on twitter! Tweet at us [@heredev](https://twitter.com/heredev) with the hashtag [#jsconfasia](https://twitter.com/hashtag/jsconfasia). We'll be retweeting our favorite maps!
+
+## The end
+
+Congratulations, you've finished the workshop for harp.gl! So far, you've learned how to:
+- create a new harp.gl application from scratch
+- customize the map's theme 
+- add data to the map
+- add data-driven styling rules to the map
+- add 3D objects to the map
+
+Thanks for attending the workshop. For any comments, suggestions, or bug reports, we encourage you to:
+- fill out this form: [harp.gl feedback](https://forms.gle/GhTVkruwsReNi3oH7)
+- or create an issue on the [harp.gl GitHub repository](https://github.com/heremaps/harp.gl/issues/new)
+
+Until next time, Singapore!
