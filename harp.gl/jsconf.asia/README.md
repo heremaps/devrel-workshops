@@ -445,7 +445,7 @@ const map = new harp.MapView({
 });
 ```
 
-### Challenge (15 mins)
+### Activity (15 mins)
 
 Play around with the map's settings to center it at your favorite city, with your favorite projection, and with the pitch and rotation changed.
 
@@ -483,7 +483,7 @@ As mentioned in the _Key Concepts_ section of this workshop, there are two diffe
 
 ### Adding static GeoJSON to the map
 
-Inside the `/data` directory, of this repo, there is a file called `wireless-hotspots.geojson` [[LINK](./resources/wireless-hotspots.geojson)]. This dataset is a list of all the wireless hotspot locations throughout Singapore. The dataset is from the [Singapore Public Data Website](https://data.gov.sg/dataset/wireless-hotspots?resource_id=98971e0f-6fcd-408b-b01e-c5d75a35c796).
+Inside the `/resources` directory, of this repo, there is a file called `wireless-hotspots.geojson` [[LINK](./resources/wireless-hotspots.geojson)]. This dataset is a list of all the wireless hotspot locations throughout Singapore. The dataset is from the [Singapore Public Data Website](https://data.gov.sg/dataset/wireless-hotspots?resource_id=98971e0f-6fcd-408b-b01e-c5d75a35c796).
 
 Download this file and save it into your project's directory. 
 
@@ -696,7 +696,7 @@ This should give us a map with two different colors, depending on the feature's 
 
 ![data driven rails](img/data-driven-rails.png)
 
-### Challenge (15 mins)
+### Activity (15 mins)
 
 Using the data source you used in the previous section, add some data-driven styling rules to the map!
 
@@ -804,7 +804,7 @@ And you should see something like this:
 
 ![dancing](img/dancing.gif)
 
-## Section 7 (The final challenge): Share you maps with us!
+## Section 7 (The final activity): Share you maps with us!
 
 With all the knowledge you've picked up in this workshop, we encourage you to publish your maps!
 
