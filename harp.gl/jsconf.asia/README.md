@@ -242,6 +242,8 @@ touch index.html
 
 Copy and paste the following code into each of the files.
 
+__NOTE__: You'll need to download the `extras.js` file from this repository. This file will help with some tasks like loading 3D objects.
+
 __`index.html`__
 
 ```html
@@ -253,6 +255,7 @@ __`index.html`__
       </style>
       <script src="https://unpkg.com/three/build/three.min.js"></script>
       <script src="https://unpkg.com/@here/harp.gl/dist/harp.js"></script>
+      <script src="extras.js"></script>
    </head>
    <body>
       <canvas id="map"></div>
@@ -381,8 +384,11 @@ const map = new harp.MapView({
    canvas,
    theme: "https://unpkg.com/@here/harp-map-theme@latest/resources/berlin_tilezen_base_globe.json",
    projection: sphereProjection,
-   maxVisibleDataSourceTiles: 400
+   //For tile cache optimization:
+   maxVisibleDataSourceTiles: 40, 
+   tileCacheSize: 100
 });
+map.setCameraGeolocationAndZoom(new harp.GeoCoordinates(1.278676, 103.850216), 4);
 ```
 
 And then make sure to use `GlobeControls` instead of `MapControls`, while also deleting the previous map control code:
@@ -474,7 +480,7 @@ As mentioned in the _Key Concepts_ section of this workshop, there are two diffe
 
 ### Adding static GeoJSON to the map
 
-Inside the `/data` directory, of this repo, there is a file called `wireless-hotspots.geojson` [[LINK](./data/wireless-hotspots.geojson)]. This dataset is a list of all the wireless hotspot locations throughout Singapore. The dataset is from the [Singapore Public Data Website](https://data.gov.sg/dataset/wireless-hotspots?resource_id=98971e0f-6fcd-408b-b01e-c5d75a35c796).
+Inside the `/data` directory, of this repo, there is a file called `wireless-hotspots.geojson` [[LINK](./resources/wireless-hotspots.geojson)]. This dataset is a list of all the wireless hotspot locations throughout Singapore. The dataset is from the [Singapore Public Data Website](https://data.gov.sg/dataset/wireless-hotspots?resource_id=98971e0f-6fcd-408b-b01e-c5d75a35c796).
 
 Download this file and save it into your project's directory. 
 
@@ -677,13 +683,13 @@ This should give us a map with two different colors, depending on the feature's 
 
 ![data driven rails](img/data-driven-rails.png)
 
-# Section 6: 3D objects
+## Section 6: 3D objects
 
 Since harp.gl is built upon [three.js](https://threejs.org/), you can add any 3D to the map scene, just like you would with any other three.js scene.
 
 For more information on three.js scenes and objects, please take a look at the [three.js manual](https://threejs.org/docs/#manual/en/introduction/Creating-a-scene).
 
-## Add a simple cube
+### Add a simple cube
 
 Let's take a look at how to add a basic 3d object: a cube. When the user clicks on the map, we'll add a cube to the clicked location on the map.
 
@@ -729,22 +735,15 @@ After clicking on the map a few times, you should have a result that looks like:
 
 ![cubes](img/cubes.png)
 
-## Add an animating 3D object
+### Add an animating 3D object
 
 Let's be honest, the simple cube on the map wasn't anything special. How about an animating 3D person?
 
-First, we'll need to add some additional three.js imports to the html. We'll be adding `inflate.min.js` and `FBXLoader.js`, which will help with loading the 3D object.
+Usually, to import some additional three.js functions to import 3D objects, but the `extras.js` file conveniently imported those for you.
 
-__`index.html`__
-```html
-<head>
-   <!-- three.js and harp.js imports -->
-   <script src="https://threejs.org/examples/js/libs/inflate.min.js"></script>
-   <script src="https://threejs.org/examples/js/loaders/FBXLoader.js"></script>
-</head>
-```
 
-Next, we'll load the 3D object using the `FBXLoader` we just imported to our html. 
+
+We'll load the 3D object using the `FBXLoader` function. 
 
 Inside of the `resources` directory, we've included a file called [`dancing.fbx`](resources/dancing.fbx). Make sure to download this into your directory so we can properly load it.
 
