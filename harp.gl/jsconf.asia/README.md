@@ -46,6 +46,24 @@ harp.gl is an open-source and free software project. However, harp.gl needs to b
 
 HERE XYZ, another HERE product, is a service for storing and managing geospatial data. HERE XYZ will provide the vector tile data endpoint and authentication for harp.gl.
 
+### Become a HERE Developer 
+
+Navigate to [developer.here.com/events/jsconfasia19](https://developer.here.com/events/jsconfasia19) and click __Get started for free__ in the top right. 
+
+Create an account. __No credit card is required__.
+
+Once you've created a HERE Devloper account, navigate to the to [HERE XYZ Token Manager](https://xyz.api.here.com/token-ui).
+
+Sign in with the HERE account you just created.
+
+You'll want to generate a new token. Select the checkbox under __READ DATA__ and then click __Generate Token__
+
+![token-ui](img/token-ui.png)
+
+Click through the next window until a token has been generated.
+
+__Important__: Copy and paste this token somewhere. You will be using it later in the workshop.
+
 ## Key concepts
 
 Now that you have a base setup of harp.gl, let's review some key concepts.
@@ -197,24 +215,6 @@ harp.gl provides two different views:
 |![mercator](img/mercator.png)|![mercator](img/globe.png)|
 
 Now onto the fun part... making some maps! 🌍
-
-### Become a HERE Developer 
-
-Navigate to [developer.here.com](https://developer.here.com/events/jsconfasia19) and click __Get started for free__ in the top right. 
-
-Create an account. __No credit card is required__.
-
-Once you've created a HERE Devloper account, navigate to the to [HERE XYZ Token Manager](https://xyz.api.here.com/token-ui).
-
-Sign in with the HERE account you just created.
-
-You'll want to generate a new token. Select the checkbox under __READ DATA__ and then click __Generate Token__
-
-![token-ui](img/token-ui.png)
-
-Click through the next window until a token has been generated.
-
-__Important__: Copy and paste this token somewhere. You will be using it later in the workshop.
 
 ## Section 1: Installing harp.gl
 
@@ -393,10 +393,7 @@ map.setCameraGeolocationAndZoom(new harp.GeoCoordinates(1.278676, 103.850216), 4
 
 And then make sure to use `GlobeControls` instead of `MapControls`, while also deleting the previous map control code:
 
-# FIX THIS
-
 ```javascript
-
 /*
 Delete this:
 const ui = new harp.MapControlsUI(mapControls);
@@ -407,7 +404,7 @@ mapControls.setRotation(6.3, 50);
 */
 
 /* Add this: */
-const controls = harp.GlobeControls(map);
+const controls = GlobeControls(map);
 controls.enabled = true;
 ```
 
@@ -448,6 +445,10 @@ const map = new harp.MapView({
 });
 ```
 
+### Challenge (15 mins)
+
+Play around with the map's settings to center it at your favorite city, with your favorite projection, and with the pitch and rotation changed.
+
 ## Section 3: Styling the base map
 
 Since harp.gl is a vector-based renderer, you can style the map on the client side to look however you like. You can style any map layer as you like to match your organization's brand guidelines, or just to have fun with your favorite colors.
@@ -457,6 +458,9 @@ harp.gl has a companion interactive map styling tool that helps with the map des
 [heremaps.github.io/harp-map-editor](https://heremaps.github.io/harp-map-editor)
 
 Play around with the editor to change the style properties of some of the layers.
+
+### Activity (15 minutes)
+Play around with map editor to create a style you like!
 
 ![harp-map-editor](img/harp-map-editor.png)
 
@@ -470,7 +474,6 @@ const map = new harp.MapView({
    theme: "my-beautiful-new-style-made-with-harp-map-editor.json"
 });
 ```
-
 
 ## Section 4: Adding data to the map
 
@@ -535,6 +538,16 @@ map.addDataSource(geoJsonDataSource).then(() => {
 With the above code, we've binded the styling rules to the datasource. Refresh your browser and take a look at the map, you should see something similar to:
 
 ![wireless-hotspots](img/wireless-hotspots.png)
+
+### Activity (20 minutes)
+
+Add some GeoJSON of your own to the map and style it!
+
+What to make a map of? Here are some places you can access geojson data to get some inspiration! 
+- [USA open data](https://www.data.gov/)
+- [Singapore open data](https://data.gov.sg/)
+- [World Bank open data](https://data.worldbank.org/)
+- [Germany open data](https://www.govdata.de/)
 
 ### Adding tiled GeoJSON from a server
 
@@ -683,6 +696,10 @@ This should give us a map with two different colors, depending on the feature's 
 
 ![data driven rails](img/data-driven-rails.png)
 
+### Challenge (15 mins)
+
+Using the data source you used in the previous section, add some data-driven styling rules to the map!
+
 ## Section 6: 3D objects
 
 Since harp.gl is built upon [three.js](https://threejs.org/), you can add any 3D to the map scene, just like you would with any other three.js scene.
@@ -789,13 +806,7 @@ And you should see something like this:
 
 ## Section 7 (The final challenge): Share you maps with us!
 
-With all the knowledge you've picked up in this workshop, we encourage you to create your own maps.ß
-
-What to make a map of? Here are some places you can access geojson data to get some inspiration! 
-- [USA open data](https://www.data.gov/)
-- [Singapore open data](https://data.gov.sg/)
-- [World Bank open data](https://data.worldbank.org/)
-- [Germany open data](https://www.govdata.de/)
+With all the knowledge you've picked up in this workshop, we encourage you to publish your maps!
 
 Once you've created your maps, create a new GitHub repository so you can publish your application to GitHub pages. For more information on publishing GitHub pages, please take a look at this [handy guide](https://help.github.com/en/articles/configuring-a-publishing-source-for-github-pages).
 
