@@ -68,7 +68,7 @@ __Important__: Copy and paste this token somewhere. You will be using it later i
 
 Now that you have a base setup of harp.gl, let's review some key concepts.
 
-#### MapView
+### MapView
 
 A `MapView` is the high-level main object in harp.gl. This is the object you'll add new layers to or customize the style of. 
 
