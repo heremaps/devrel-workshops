@@ -383,7 +383,7 @@ To change to the globe projection, pass the following parameters in your constru
 const map = new harp.MapView({
    canvas,
    theme: "https://unpkg.com/@here/harp-map-theme@latest/resources/berlin_tilezen_base_globe.json",
-   projection: sphereProjection,
+   projection: harp.sphereProjection,
    //For tile cache optimization:
    maxVisibleDataSourceTiles: 40, 
    tileCacheSize: 100
