@@ -404,7 +404,7 @@ mapControls.setRotation(6.3, 50);
 */
 
 /* Add this: */
-const controls = GlobeControls(map);
+const controls = new GlobeControls(map);
 controls.enabled = true;
 ```
 
