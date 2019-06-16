@@ -203,7 +203,7 @@ Navigate to [developer.here.com/events/jsconfasia19](https://developer.here.com/
 
 Create an account. __No credit card is required__.
 
-Once you've created a HERE Devloper account, navigate to the to [HERE XYZ Token Manager](https://xyz.api.here.com/token-ui).
+Once you've created a HERE Developer account, navigate to the to [HERE XYZ Token Manager](https://xyz.api.here.com/token-ui).
 
 Sign in with the HERE account you just created.
 
