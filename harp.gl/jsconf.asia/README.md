@@ -1,6 +1,5 @@
 # Interactive 3D web mapping with harp.gl
 
-
 Welcome to the JSConf lecture track!
 
 This workshop will cover __harp.gl__, a new and beta 3D map rendering engine for the web.
@@ -39,30 +38,6 @@ harp.gl is a beta product and we are always looking to improve it with your feed
 ### Other HERE resources
 * [HERE Developer Portal](https://developer.here.com/events/jsconfasia19) (where to sign up for API tokens)
 * [HERE XYZ Documentation](https://www.here.xyz/) (documentation for HERE XYZ, the service that will provide the map tiles)
-
-## Acquiring credentials
-
-harp.gl is an open-source and free software project. However, harp.gl needs to be connected to a data source in order to display a map. 
-
-HERE XYZ, another HERE product, is a service for storing and managing geospatial data. HERE XYZ will provide the vector tile data endpoint and authentication for harp.gl.
-
-### Become a HERE Developer 
-
-Navigate to [developer.here.com/events/jsconfasia19](https://developer.here.com/events/jsconfasia19) and click __Get started for free__ in the top right. 
-
-Create an account. __No credit card is required__.
-
-Once you've created a HERE Devloper account, navigate to the to [HERE XYZ Token Manager](https://xyz.api.here.com/token-ui).
-
-Sign in with the HERE account you just created.
-
-You'll want to generate a new token. Select the checkbox under __READ DATA__ and then click __Generate Token__
-
-![token-ui](img/token-ui.png)
-
-Click through the next window until a token has been generated.
-
-__Important__: Copy and paste this token somewhere. You will be using it later in the workshop.
 
 ## Key concepts
 
@@ -215,6 +190,31 @@ harp.gl provides two different views:
 |![mercator](img/mercator.png)|![mercator](img/globe.png)|
 
 Now onto the fun part... making some maps! 🌍
+
+## Acquiring credentials
+
+harp.gl is an open-source and free software project. However, harp.gl needs to be connected to a data source in order to display a map. 
+
+HERE XYZ, another HERE product, is a service for storing and managing geospatial data. HERE XYZ will provide the vector tile data endpoint and authentication for harp.gl.
+
+### Become a HERE Developer 
+
+Navigate to [developer.here.com/events/jsconfasia19](https://developer.here.com/events/jsconfasia19) and click __Get started for free__ in the top right. 
+
+Create an account. __No credit card is required__.
+
+Once you've created a HERE Devloper account, navigate to the to [HERE XYZ Token Manager](https://xyz.api.here.com/token-ui).
+
+Sign in with the HERE account you just created.
+
+You'll want to generate a new token. Select the checkbox under __READ DATA__ and then click __Generate Token__
+
+![token-ui](img/token-ui.png)
+
+Click through the next window until a token has been generated.
+
+__Important__: Copy and paste this token somewhere. You will be using it later in the workshop.
+
 
 ## Section 1: Installing harp.gl
 
