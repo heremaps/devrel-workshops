@@ -445,6 +445,24 @@ const map = new harp.MapView({
 });
 ```
 
+### Add a rotating camera
+
+With harp.gl, you can add a rotating camera for a slick visual effect.
+
+```javascript
+const options = { tilt: 45, distance: 3000 };
+const coordinates = new harp.GeoCoordinates(1.278676, 103.850216);
+let azimuth = 300;
+map.addEventListener(harp.MapViewEventNames.Render, () => {
+   map.lookAt(coordinates, options.distance, options.tilt, (azimuth += 0.1))
+});
+map.beginAnimation();
+```
+
+And you'll see something like this:
+
+![rotate](img/rotate.gif)
+
 ### Activity (15 mins)
 
 Play around with the map's settings to center it at your favorite city, with your favorite projection, and with the pitch and rotation changed.
