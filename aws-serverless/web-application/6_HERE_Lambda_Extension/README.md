@@ -96,46 +96,40 @@ To view the changes on your website, you need to upload the content to your S3 B
 <details>
 <summary><strong>Step-by-step instructions (expand for details)</strong></summary><p>
 
-1. Go to AWS Management Console.
 
-1. In the AWS Management Console choose Services then select S3 under Storage.
+From your Cloud9 development environment(or local environment)
+1. Make sure your working directory is `wildrydes-site` where you cloned your website repository in the main workshop.
+1. Download the new content archive locally.
+    ```
+     curl https://raw.githubusercontent.com/heremaps/devrel-workshops/master/aws-serverless/web-application/6_HERE_Lambda_Extension/website_files.zip -o /tmp/website_files.zip
+    ```
 
-1. Select your bucket which you have created and used in the previous modules.
+   Alternatively, you can download the files using your browser if you are developing locally.
 
-1. Click the [link](https://github.com/heremaps/devrel-workshops/blob/master/aws-serverless/web-application/6_HERE_Lambda_Extension/website_files.zip) and download the zip file (website_files.zip) and extract it to your local machine.
+1. Unzip the archive and overwrite the existing version of the files.
+    ```
+    unzip -o website_files.zip
+    ```
 
-    
-     
-2. Browse to the directory where you saved the files locally which you have downloaded in previous step. Open the file “ride.js” with any text editor. 
+1. Clean up the downloaded archive.
+   ```
+   rm website_files.zip
+   ```
 
-3. Find the function “handleViewRoute” in ride.js code, in the ajax URL enter/paste the API endpoint which you have noted in step-2
+1. Edit the js/ride.js file with a text editor.
 
-     ![Deploy SAR Screenshot](../6_HERE_Lambda_Extension/Routing_images/RoutingFunctionDeploy6.png)
+1. Update line 175, and set the value of the `url` setting to the API endpoint you created in the previous section.
 
 1. Save the file.
 
-1. Go back to AWS Console -> S3 Bucket Page, here you need to upload (add/replace) 4 files Choose Upload
+1. From the root directory of your repository, commit and push the new files.
+   ```
+   git add .
+   git commit -m "Adding HERE routing functionality"
+   git push
+   ```
 
-1. Navigate to the ‘css’ folder of your S3 Bucket and open it. Click on “upload” button and then “Add files” to browse to the directory where you saved the files locally. Upload the ‘routing.css’ file found inside the “css” folder.
-
-10.	Go back to the S3 bucket main overview tab, and navigate to the ‘js’ folder of your S3 Bucket and open it., Click on “upload” button and then “Add files” to browse to the directory where you saved the files locally. Upload the ‘ride.js’ & ‘map.js’ files inside the “js” folder.
-
-11.	Go back to the S3 bucket main overview tab, click on “upload” button and then “Add files” to browse to the directory where you saved the files locally. Upload the ‘ride.html’ file. 
-          
-     ![Deploy SAR Screenshot](../6_HERE_Lambda_Extension/Routing_images/RoutingFunctionDeploy7.png)
-     
-
-     **File List:**
-     
-     HTML file:
-     ride.html – Map UI has been modified and Set Drop UI has been added additionally
-     
-     CSS folder:
-     route.css – It help us to get the route map UI
-     
-     JS folder:
-     ride.js – Additionally included a function to handle the routing request from ride.html
-     map.js – Invoked the here map and displays the route from Pick to Drop Location
+  [Amplify Console](https://console.aws.amazon.com/amplify/home) should pick up the changes and begin building and deploying your web application. Watch it to verify the completion of the deployment.
 
 </p></details>
 
