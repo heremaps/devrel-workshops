@@ -124,7 +124,7 @@ harp.gl has its own syntax for styling the map. The styling syntax lives inside 
 
 - the width for roads
 - the background color for water
-- the mulitplier of the height of 3d buildings
+- the multiplier of the height of 3d buildings
 
 You can take a look at a sample style sheet here: [https://unpkg.com/@here/harp-map-theme@latest/resources/berlin_tilezen_night_reduced.json](https://unpkg.com/@here/harp-map-theme@latest/resources/berlin_tilezen_night_reduced.json)
 
@@ -268,7 +268,6 @@ __`index.html`__
       </style>
       <script src="https://unpkg.com/three/build/three.min.js"></script>
       <script src="https://unpkg.com/@here/harp.gl/dist/harp.js"></script>
-      <script src="extras.js"></script>
    </head>
    <body>
       <canvas id="map"></canvas>
@@ -289,7 +288,7 @@ const map = new harp.MapView({
 });
 
 map.setCameraGeolocationAndZoom(
-   new harp.GeoCoordinates(45.523064, -122.676483),
+   new harp.GeoCoordinates(45.5234, -122.6762),
    16
 );
 
