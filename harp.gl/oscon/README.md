@@ -211,7 +211,7 @@ HERE XYZ, another HERE product, is a service for storing and managing geospatial
 
 ### Become a HERE Developer 
 
-Navigate to [developer.here.com/events/jsconfasia19](https://developer.here.com/events/jsconfasia19) and click __Get started for free__ in the top right. 
+Navigate to [developer.here.com/events/oscon](https://developer.here.com/events/oscon) and click __Get started for free__ in the top right. 
 
 Create an account. __No credit card is required__.
 
