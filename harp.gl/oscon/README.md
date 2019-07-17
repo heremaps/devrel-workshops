@@ -448,9 +448,8 @@ here configure account
 ```   
 3. Create an XYZ Space
 ```
-here xyz create -t SPACE-ID -d "a meaningful description you'll be happy to have later"
+here xyz create -t "a title of the space" -d "a meaningful description you'll be happy to have later"
 ```
-The name of your XYZ Space is `SPACE-ID` and it comes after the `-t` parameter, please provide a meaningful space name as you will need to refer to it later.
 
 4. Download something from the data sources listed above
 
