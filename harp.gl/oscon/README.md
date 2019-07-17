@@ -371,7 +371,7 @@ Create a new object from `OmvDataSource` called `globalRailroads`.
 const globalRailroads = new harp.OmvDataSource({
    baseUrl: "https://xyz.api.here.com/hub/spaces/hUJ4ZHJR/tile/web",
    apiFormat: harp.APIFormat.XYZSpace,
-   authenticationCode: 'AJXABoLRYHN488wIHnxheik', //Use this token!
+   authenticationCode: 'AfArIuzngG4gkdhlBZkysnc', //Use this token!
 });
 ```
 
@@ -384,7 +384,7 @@ The above code will create and connect to the new data source, but we still need
 const globalRailroads = new harp.OmvDataSource({
    baseUrl: "https://xyz.api.here.com/hub/spaces/hUJ4ZHJR/tile/web",
    apiFormat: harp.APIFormat.XYZSpace,
-   authenticationCode: 'AJXABoLRYHN488wIHnxheik', //Use this token!
+   authenticationCode: 'AfArIuzngG4gkdhlBZkysnc', //Use this token!
 });
 
 map.addDataSource(globalRailroads).then(() => {
