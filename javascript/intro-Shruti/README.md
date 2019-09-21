@@ -3,7 +3,7 @@ Workshop using HERE APIs for Intergeo 2019
 
 [Register here](www.developer.here.com/events/shruti-workshop) for a free developer account</br>
 # Generate apikey , app_id and app_code
-![Folding in action](https://github.com/kuberaspeaking/Intergeo/blob/master/img/register.gif)
+![Folding in action](https://github.com/kuberaspeaking/devrel-workshops/blob/patch-3/javascript/intro-Shruti/register.gif)
 
 # Start coding!
 
