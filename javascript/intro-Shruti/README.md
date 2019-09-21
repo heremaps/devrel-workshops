@@ -1,7 +1,7 @@
 # HERE JavaScript Workshop for Intergeo 2019
 Workshop using HERE APIs for Intergeo 2019
 
-[Register here](http://developer.here.com/events/community-germany-intergeo19) for a free developer account</br>
+[Register here](www.developer.here.com/events/shruti-workshop) for a free developer account</br>
 # Generate apikey , app_id and app_code
 ![Folding in action](https://github.com/kuberaspeaking/Intergeo/blob/master/img/register.gif)
 
