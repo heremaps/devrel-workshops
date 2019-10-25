@@ -473,7 +473,7 @@ For this example, we will assume you are using javascript bundle.
 
 From the previous section, you can see how did we add `globalRailroads` to the map, we will follow a similar method right now.
 Add the following code snippet to your code:
-```
+```javascript
 const xyzSpaceDataSource = new harp.OmvDataSource({
    baseUrl: `https://xyz.api.here.com/hub/spaces/SPACE-ID/tile/web`,
    apiFormat: harp.APIFormat.XYZSpace,
@@ -488,7 +488,7 @@ here xyz token
 ```
 
 With the previous code, we have initialized the data source, but we need to add it to the map:
-```
+```javascript
 map.addDataSource(xyzSpaceDataSource).then(() => {
    const styles = colorConfig.map(x => {
       return {
