@@ -15,7 +15,6 @@ service that enables developers and map makers to create web maps and manage loc
 ### Feedback
 
 harp.gl is a beta product and we are always looking to improve it with your feedback. For any comments, suggestions, or bug reports, we encourage you to:
-- fill out this form: [harp.gl feedback](https://forms.gle/GhTVkruwsReNi3oH7)
 - or create an issue on the [harp.gl GitHub repository](https://github.com/heremaps/harp.gl/issues/new)
 
 [HERE XYZ](https://explore.xyz.here.com/) has a set of [resources](https://explore.xyz.here.com/resources) that you can explore to get answers to the most common questions you might have, check the tutorials and provide feedback about it.
@@ -59,7 +58,7 @@ HERE XYZ, another HERE product, is a service for storing and managing geospatial
 
 ### Become a HERE Developer 
 
-Navigate to [developer.here.com/events/oscon](https://developer.here.com/events/oscon) and click __Get started for free__ in the top right. 
+Navigate to [developer.here.com](https://developer.here.com/) and click __Get started for free__ in the top right. 
 
 Create an account. __No credit card is required__.
 
@@ -199,22 +198,20 @@ const globalRailroads = new harp.OmvDataSource({
 });
 
 map.addDataSource(globalRailroads).then(() => {
-	const styles = [
-		{
-			"when": "$geometryType ^= 'line'",
-			"renderOrder": 1000,
-			"technique": "solid-line",
-			"attr": {
-				"color":  "#FAA8FF",
-				"transparent": true,
-				"opacity": 1,
-				"metricUnit": "Pixel",
-				"lineWidth": 1
-			}
+	const styles = [{
+		"when": "$geometryType ^= 'line'",
+		"renderOrder": 1000,
+		"technique": "solid-line",
+		"attr": {
+			"color":  "#FAA8FF",
+			"transparent": true,
+			"opacity": 1,
+			"metricUnit": "Pixel",
+			"lineWidth": 1
 		}
-	]
+	}]
 	globalRailroads.setStyleSet(styles);
-   map.update();
+	map.update();
 });
 ```
 
