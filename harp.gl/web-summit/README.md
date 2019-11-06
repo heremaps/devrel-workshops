@@ -16,7 +16,7 @@ service that enables developers and map makers to create web maps and manage loc
 
 harp.gl is a beta product and we are always looking to improve it with your feedback. For any comments, suggestions, or bug reports, we encourage you to:
 
-- or create an issue on the [harp.gl GitHub repository](https://github.com/heremaps/harp.gl/issues/new)
+- create an issue on the [harp.gl GitHub repository](https://github.com/heremaps/harp.gl/issues/new)
 
 [HERE XYZ](https://explore.xyz.here.com/) has a set of [resources](https://explore.xyz.here.com/resources) that you can explore to get answers to the most common questions you might have, check the tutorials and provide feedback about it.
 
