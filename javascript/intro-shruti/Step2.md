@@ -6,8 +6,8 @@ Add the following code before </script> tag
 ```javascript
       function displayEV(){
         let params = {
-          "app_id": "zAHKPiijsFrECICMz4D2",
-          "app_code": "vandkZuWnOaO3NTdKnlGDg",
+          "app_id": "{YOUR_APP_ID}",
+          "app_code": "{YOUR_APP_CODE}",
           "in":  myPos.lat + ',' + myPos.lng +";r=1000000",       // meters
           "cat": "EV-charging-station",
           "size": "500"
