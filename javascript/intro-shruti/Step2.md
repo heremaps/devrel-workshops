@@ -38,8 +38,7 @@ Add the following code before </script> tag
       }
 
       function addMarker(newPos,html){
-        var evIcon = new H.map.Icon('img/EV.png');
-        var evMarker = new H.map.Marker(newPos,{ icon: evIcon });
+        var evMarker = new H.map.Marker(newPos);
         map.addObject(evMarker);
         };
 
