@@ -5,6 +5,12 @@
 Add the following code before </script> tag
 
 ```javascript
+
+    var customStyle = {
+      strokeColor: 'dark green',
+      fillColor: 'rgba(0, 255, 100, 0.2)',
+      lineWidth: 1,
+        };
     function drawCircle(){
         var circle = new H.map.Circle(myPos,5000,{ style: customStyle })
         map.addObject(circle)
