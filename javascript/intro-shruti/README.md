@@ -1,4 +1,4 @@
-![HERE Logo](https://github.com/heremaps/devrel-workshops/blob/master/javascript/intro-shruti/img/HERE_Logo_2016_POS_sRGB200X183.jpg) 
+![HERE Logo](https://github.com/heremaps/devrel-workshops/blob/master/javascript/intro-shruti/img/hereWsLogo.png) 
 # HERE JavaScript Workshop 
 In this workshop we will learn to use the JS and REST APIs from the HERE Location Suite.
 
