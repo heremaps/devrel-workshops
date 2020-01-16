@@ -42,5 +42,5 @@ Add the following code before </script> tag
 ```
 </br> Double-click on saved file to view on browser
 
-[![Foo](https://github.com/kuberaspeaking/HERE-JS-workshop/blob/master/img/s3.png)](https://github.com/kuberaspeaking/HERE-JS-workshop/blob/master/Step3.md) 
+[![Foo](https://github.com/heremaps/devrel-workshops/blob/master/javascript/intro-shruti/img/s3.png)](https://github.com/heremaps/devrel-workshops/blob/master/javascript/intro-shruti/Step3.md) 
 

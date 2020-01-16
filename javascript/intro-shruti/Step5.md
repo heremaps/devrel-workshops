@@ -1,6 +1,8 @@
 
 #### [Final Result](https://kuberaspeaking.github.io/HERE-JS-workshop/)
-Check [final code](/index.html) with modifications
+
+Check [final code](https://github.com/heremaps/devrel-workshops/blob/master/javascript/intro-shruti/index.html) with modifications
+
 
 # Contact Information
 [![Foo](https://www.gettingstamped.com/wp-content/uploads/2015/02/Twitter-Logo.png)](https://twitter.com/heredev) 

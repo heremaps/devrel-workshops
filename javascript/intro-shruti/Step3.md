@@ -6,14 +6,17 @@ Add the following code before </script> tag
 
 ```javascript
 
-            function drawCircle(){
-                var circle = new H.map.Circle(myPos,5000);
-                map.addObject(circle);
-            }
+    var customStyle = {
+      strokeColor: 'dark green',
+      fillColor: 'rgba(0, 255, 100, 0.2)',
+      lineWidth: 1,
+        };
+    function drawCircle(){
+        var circle = new H.map.Circle(myPos,5000,{ style: customStyle })
+        map.addObject(circle)
+        };
 
-            drawCircle();
+    drawCircle();
 ```
-</br> Double-click on saved file to view on browser
+[![Foo](https://github.com/heremaps/devrel-workshops/blob/master/javascript/intro-shruti/img/s4.png)](https://github.com/heremaps/devrel-workshops/blob/master/javascript/intro-shruti/Step4.md) 
 
-
-[![Foo](https://github.com/kuberaspeaking/HERE-JS-workshop/blob/master/img/s4.png)](https://github.com/kuberaspeaking/HERE-JS-workshop/blob/master/Step4.md) 

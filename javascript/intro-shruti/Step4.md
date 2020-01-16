@@ -3,6 +3,7 @@
 Add the following code before </script> tag
 
 ```javascript
+
         
             var myLoc = myPos.lat + ',' + myPos.lng;
             var routingParams = {
@@ -59,5 +60,5 @@ Add the following code before </script> tag
 ```
 </br> Double-click on saved file to view on browser
 
-[![Foo](https://github.com/kuberaspeaking/HERE-JS-workshop/blob/master/img/s5.png)](https://github.com/kuberaspeaking/HERE-JS-workshop/blob/master/Step5.md) 
+[![Foo](https://github.com/heremaps/devrel-workshops/blob/master/javascript/intro-shruti/img/s5.png)](https://github.com/heremaps/devrel-workshops/blob/master/javascript/intro-shruti/Step5.md) 
 
