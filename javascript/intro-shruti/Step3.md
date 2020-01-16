@@ -5,12 +5,13 @@
 Add the following code before </script> tag
 
 ```javascript
-    function drawCircle(){
-        var circle = new H.map.Circle(myPos,5000,{ style: customStyle })
-        map.addObject(circle)
-        };
 
-    drawCircle();
+            function drawCircle(){
+                var circle = new H.map.Circle(myPos,5000);
+                map.addObject(circle);
+            }
+
+            drawCircle();
 ```
 </br> Double-click on saved file to view on browser
 
