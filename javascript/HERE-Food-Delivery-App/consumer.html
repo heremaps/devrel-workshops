@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Smart Cities</title>
+        <!-- SCRIPTS -->
+        <meta name="viewport" charset="UTF-8" content="initial-scale=1.0, width=device-width" />
+        <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+        <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+        <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+        <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css"/>
+    </head>
+    <body>
+        <div id="map" style="width: 100vw; height: 100vh; background: #39B6B3;" ></div> 
+        <script>
+            var platform = new H.service.Platform({
+                apikey: "eD_IzP_4psnri8dg2gg3-AdnamvR5vriLzfDccLfW1A"
+            })
+
+            // Obtain the default map types from the platform object:
+            var defaultLayers = platform.createDefaultLayers();
+            // var myPos = {lat: 48.69429, lng: 9.1866};
+            // Instantiate (and display) a map object:
+            var map = new H.Map(
+                document.getElementById('map'),
+                defaultLayers.vector.normal.map,
+                {
+                    zoom: 11,
+                    center: {lat: 48.69429, lng: 9.1866} // center of map
+            });
+
+            var ui = H.ui.UI.createDefault(map, defaultLayers);
+
+            var mapEvents = new H.mapevents.MapEvents(map);
+
+            var behavior = new H.mapevents.Behavior(mapEvents);
+
+            var icon = new H.map.Icon('img/home_logo.png');
+            if(navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(position => {
+                // console.log(position);
+                // set maker position using the latitude and longitude in the received position
+                markerPosition = {lat:position.coords.latitude,lng:position.coords.longitude};
+                //  create makrker element using the received position
+                posMarker = new H.map.Marker(markerPosition,{icon: icon});
+                posMarker.setData("I'm HERE");
+                //  Add marker to map.
+                map.addObject(posMarker);
+                // map.setCenter(posMarker);
+
+                function displayEV(){
+                    let params = {
+                        "apiKey": "KUFJZlg1QpKnIqlMlodmDXeu7nNktr2-caRXFHpxgSI",
+                        "in":  markerPosition.lat + ',' + markerPosition.lng +";r=1000000",       // meters
+                        "cat": "EV-charging-station",
+                        "size": "500"
+                    }
+
+                    let query = Object.keys(params)
+                        .map(k => encodeURIComponent(k) + '=' + encodeURIComponent(params[k]))
+                        .join('&')
+
+                    let url = 'https://places.ls.hereapi.com/places/v1/browse?' + query;
+
+
+                    fetch(url, {
+                        "method": "GET"
+                    })
+                    .then(response => response.json())
+                    .then(response => {
+                        console.log(response);
+                        // create a marker object
+                        for (i=0; i < response.results.items.length; i++){  
+                        newPos= ({lat: response.results.items[i].position[0], lng: response.results.items[i].position[1]});
+                        respData = response.results.items[i].title;
+                        addMarker(newPos,respData);
+                        // printInfo()
+                        } 
+                    })
+                }
+
+                function addMarker(newPos,respData){
+                    var evIcon = new H.map.Icon('img/EV.png');
+                    evMarker = new H.map.Marker(newPos,{ icon: evIcon });
+                    evMarker.setData(respData);
+                    map.addObject(evMarker);
+                }
+
+                function addInfoBubble(map){
+                    map.addEventListener('tap', function (evt) {
+                    var bubble =  new H.ui.InfoBubble(evt.target.getGeometry(), {
+                        // read custom data
+                        content: evt.target.getData()
+                    });
+                        // show info bubble
+                    ui.addBubble(bubble);
+                    }, false);
+                }
+
+                displayEV();
+                addInfoBubble(map);
+
+                var customStyle = {
+                    strokeColor: 'dark green',
+                    fillColor: 'rgba(0, 255, 100, 0.2)',
+                    lineWidth: 1,
+                };
+
+                function drawCircle(){
+                    var circle = new H.map.Circle(markerPosition,5000,{ style: customStyle });
+                    map.addObject(circle);  
+                };
+
+                drawCircle();
+
+
+                var myLoc = markerPosition.lat + ',' + markerPosition.lng;
+                var routingParams = {
+                    'mode': 'fastest;car;',
+                    'start': myLoc,
+                    'range': '600', // 10 (10x60secs) minutes of driving 
+                    'rangetype': 'time'
+                };
+
+                // Define a callback function to process the isoline response.
+                var onResult = function(result) {
+                    var center = new H.geo.Point(
+                        result.response.center.latitude,
+                        result.response.center.longitude),
+                    isolineCoords = result.response.isoline[0].component[0].shape,
+                    linestring = new H.geo.LineString(),
+                    isolinePolygon,
+                    isolineCenter;
+
+                    // Add the returned isoline coordinates to a linestring:
+                    isolineCoords.forEach(function(coords) {
+                        linestring.pushLatLngAlt.apply(linestring, coords.split(','))
+                    })
+
+                    // Create a polygon and a marker representing the isoline:
+                    isolinePolygon = new H.map.Polygon(linestring);
+                    //   isolineCenter = new H.map.Marker(center)
+
+                    // Add the polygon and marker to the map:
+                    map.addObject(isolinePolygon);
+
+                    // Center and zoom the map so that the whole isoline polygon is
+                    // in the viewport:
+
+                    map.getViewModel().setLookAtData({bounds: isolinePolygon.getBoundingBox()});
+                }
+
+                // Get an instance of the routing service:
+                var router = platform.getRoutingService();
+
+                // Call the Routing API to calculate an isoline:
+                router.calculateIsoline(
+                    routingParams,
+                    onResult,
+                    function(error) {
+                        alert(error.message);
+                    }
+                );
+
+
+                });
+
+        } 
+        else {
+            console.error("Geolocation is not supported by this browser!");
+        }
+
+         
+
+            
+        </script>
+    </body>
+</html>
