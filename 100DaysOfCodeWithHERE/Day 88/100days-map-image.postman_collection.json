@@ -1,0 +1,290 @@
+{
+	"info": {
+		"_postman_id": "858c18ef-6143-4b1f-9c5d-e4836773cd20",
+		"name": "100DaysOfCode Map Image",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Day 86 (Map of Manhattan)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://image.maps.ls.hereapi.com/mia/1.6/mapview?apiKey={{apiKey}}&ctr=40.71451,-74.00602&w=1280&h=720&f=1",
+					"protocol": "https",
+					"host": [
+						"image",
+						"maps",
+						"ls",
+						"hereapi",
+						"com"
+					],
+					"path": [
+						"mia",
+						"1.6",
+						"mapview"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "{{apiKey}}"
+						},
+						{
+							"key": "ctr",
+							"value": "40.71451,-74.00602"
+						},
+						{
+							"key": "w",
+							"value": "1280"
+						},
+						{
+							"key": "h",
+							"value": "720"
+						},
+						{
+							"key": "f",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Day 87 (Satellite image of Easter Island)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://image.maps.ls.hereapi.com/mia/1.6/mapview?apiKey={{apiKey}}&ctr=-27.11789,-109.35955&w=1280&h=720&f=0&t=1&z=12",
+					"protocol": "https",
+					"host": [
+						"image",
+						"maps",
+						"ls",
+						"hereapi",
+						"com"
+					],
+					"path": [
+						"mia",
+						"1.6",
+						"mapview"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "{{apiKey}}"
+						},
+						{
+							"key": "ctr",
+							"value": "-27.11789,-109.35955"
+						},
+						{
+							"key": "w",
+							"value": "1280"
+						},
+						{
+							"key": "h",
+							"value": "720"
+						},
+						{
+							"key": "f",
+							"value": "0"
+						},
+						{
+							"key": "t",
+							"value": "1"
+						},
+						{
+							"key": "z",
+							"value": "12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Day 88 (Map of Disneyland with Marker)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://image.maps.ls.hereapi.com/mia/1.6/mapview?apiKey={{apiKey}}&ctr=33.8121,-117.91899&w=1280&h=720&f=1&z=16&poi=33.81278,-117.91899&poifc=FF00FF00&poithm=1",
+					"protocol": "https",
+					"host": [
+						"image",
+						"maps",
+						"ls",
+						"hereapi",
+						"com"
+					],
+					"path": [
+						"mia",
+						"1.6",
+						"mapview"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "{{apiKey}}"
+						},
+						{
+							"key": "ctr",
+							"value": "33.8121,-117.91899"
+						},
+						{
+							"key": "w",
+							"value": "1280"
+						},
+						{
+							"key": "h",
+							"value": "720"
+						},
+						{
+							"key": "f",
+							"value": "1"
+						},
+						{
+							"key": "z",
+							"value": "16"
+						},
+						{
+							"key": "poi",
+							"value": "33.81278,-117.91899"
+						},
+						{
+							"key": "poifc",
+							"value": "FF00FF00"
+						},
+						{
+							"key": "poithm",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Day 89 (Map the Bermuda Triangle)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://image.maps.ls.hereapi.com/mia/1.6/region?apiKey={{apiKey}}&w=1280&h=720&f=1&a=32.29362,-64.78414,25.77481,-80.19773,18.46634,-66.10474&fc=880000FF&lc=FFFFFFFF",
+					"protocol": "https",
+					"host": [
+						"image",
+						"maps",
+						"ls",
+						"hereapi",
+						"com"
+					],
+					"path": [
+						"mia",
+						"1.6",
+						"region"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "{{apiKey}}"
+						},
+						{
+							"key": "ctr",
+							"value": "25.005973,-70.006614",
+							"disabled": true
+						},
+						{
+							"key": "w",
+							"value": "1280"
+						},
+						{
+							"key": "h",
+							"value": "720"
+						},
+						{
+							"key": "f",
+							"value": "1"
+						},
+						{
+							"key": "z",
+							"value": "5",
+							"disabled": true
+						},
+						{
+							"key": "a",
+							"value": "32.29362,-64.78414,25.77481,-80.19773,18.46634,-66.10474"
+						},
+						{
+							"key": "fc",
+							"value": "880000FF"
+						},
+						{
+							"key": "lc",
+							"value": "FFFFFFFF"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Day 90 (Map a route across Crete)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://image.maps.ls.hereapi.com/mia/1.6/routing?apiKey={{apiKey}}&f=1&w=1280&h=720&waypoint0=35.49393,23.65603&waypoint1=35.20657,26.10085&ml",
+					"protocol": "https",
+					"host": [
+						"image",
+						"maps",
+						"ls",
+						"hereapi",
+						"com"
+					],
+					"path": [
+						"mia",
+						"1.6",
+						"routing"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "{{apiKey}}"
+						},
+						{
+							"key": "f",
+							"value": "1"
+						},
+						{
+							"key": "w",
+							"value": "1280"
+						},
+						{
+							"key": "h",
+							"value": "720"
+						},
+						{
+							"key": "waypoint0",
+							"value": "35.49393,23.65603"
+						},
+						{
+							"key": "waypoint1",
+							"value": "35.20657,26.10085"
+						},
+						{
+							"key": "ml",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

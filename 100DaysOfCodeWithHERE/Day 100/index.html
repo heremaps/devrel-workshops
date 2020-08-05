@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Test XYZ</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-ui.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+    <style>
+	body {
+		margin: 0;
+	}
+
+	#mapContainer {
+	width: 100vw;
+	height: 100vh;
+	}
+    </style>
+  </head>
+  <body>
+
+    <div id="mapContainer"></div>
+
+    <script>
+	// Get this at developer.here.com, it's a JavaScript key
+	const HERE_MAPS_KEY = "c1LJuR0Bl2y02PefaQ2d8PvPnBKEN8KdhAOFYR_Bgmw";
+	// This is a read only key you can get in our token manager
+	const DATA_HUB_ACCESS_TOKEN = "AMuu6pamTieLe38Ybun60gA";
+	// Your space ID
+	const SPACE_ID = "uK3E2YoX";
+
+	var platform = new H.service.Platform({
+		apikey: HERE_MAPS_KEY
+	});
+
+	// Obtain the default map types from the platform object:
+	var defaultLayers = platform.createDefaultLayers();
+
+	var map = new H.Map(
+		document.getElementById('mapContainer'),
+		defaultLayers.vector.normal.map,
+		{
+			zoom: 4,
+			center: { lat: 38.7984, lng: -96.3944 },
+			pixelRatio: window.devicePixelRatio || 1
+		}
+	);
+
+	var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+
+	// Create the default UI:
+	var ui = H.ui.UI.createDefault(map, defaultLayers);
+
+	const service = platform.getXYZService({
+		token: DATA_HUB_ACCESS_TOKEN,
+	});
+
+	const mySpaceProvider = new H.service.xyz.Provider(service, SPACE_ID, {});
+
+	const mySpaceLayer = new H.map.layer.TileLayer(mySpaceProvider);
+
+	map.addLayer(mySpaceLayer);
+	
+	</script>
+  </body>
+</html>
