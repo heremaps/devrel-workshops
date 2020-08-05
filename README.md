@@ -26,8 +26,8 @@ HERE workshops exist for the following topics:
 - [XYZ](xyz/README.md)
 - [Azure](azure/fleetmanagement)
    - [Fleet Management](azure/fleetmanagement/README.md)
-- [100DaysOfCodeWithHERE](100DaysOfCodeWithHERE)
-  - [100DaysOfCode challenge with HERE](100DaysOfCodeWithHERE/README.md)
+- [100DaysOfCode WithHERE](100DaysOfCodeWithHERE)
+  - [100DaysOfCode challenge with HERE Web SDK](100DaysOfCodeWithHERE/README.md)
 
 As more workshops are created, they will be added to the list and will be given at various events.
 
