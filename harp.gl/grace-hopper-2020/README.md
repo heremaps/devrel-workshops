@@ -9,7 +9,6 @@ Walk away with visualization of LiDAR point-clouds collected by HERE cars, raw f
 
 This will be achieved using an open-source 3D web-map rendering engine – [harp.gl](https://www.harp.gl/)
 
-
 ### Workshop Prerequisites
 
 #### Install node and npm
@@ -45,7 +44,7 @@ Go to https://developer.here.com/sign-up?create=Freemium-Basic&keepState=true&st
 
 Create an API key and replace the apiKey in the file: 
 
-#### Section 2: Initial setup
+#### Section 2: Run the app
 
 ##### npm install
 Run this command in each of the three sub-folders mentioned below:
@@ -54,7 +53,7 @@ Run this command in each of the three sub-folders mentioned below:
 2. ./intermediate/initial
 3. ./hdmap/initial
 
-##### Run the app
+##### Verify your set up
 Go to ./point-clouds/initial folder and run the app using the command below:
 
 ````
