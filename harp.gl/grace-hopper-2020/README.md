@@ -18,10 +18,7 @@ Download and install Node on your machine: https://nodejs.org/en/download/
 Use the latest LTS Version: 12.18.3
 
 #### Checkout workshop repository
-URL: https://github.com/heremaps/devrel-workshops
-
-Our workshop resources reside in this folder: 
-/harp.gl/grace-hopper-2020
+URL: https://github.com/heremaps/devrel-workshops/tree/master/harp.gl/grace-hopper-2020
 
 #### Section 1: Initial App Setup
 The initial app set up for all three steps has already been done for you. 
