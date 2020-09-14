@@ -9,7 +9,6 @@ Walk away with visualization of LiDAR point-clouds collected by HERE cars, raw f
 
 This will be achieved using an open-source 3D web-map rendering engine – [harp.gl](https://www.harp.gl/)
 
-
 ### Workshop Prerequisites
 
 #### Install node and npm
@@ -37,10 +36,6 @@ Go to https://developer.here.com/sign-up?create=Freemium-Basic&keepState=true&st
 2. Generate an app under the 'REST' section
 3. Create an API Key
 4. Replace the new api key in the file: ./apikey.ts
-
-
-
-Create an API key and replace the apiKey in the file: 
 
 #### Section 2: Initial setup
 
