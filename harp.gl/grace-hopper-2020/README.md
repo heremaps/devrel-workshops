@@ -9,42 +9,51 @@ Walk away with visualization of LiDAR point-clouds collected by HERE cars, raw f
 
 This will be achieved using an open-source 3D web-map rendering engine – [harp.gl](https://www.harp.gl/)
 
-#### Section 1: Initial App Setup
 
-##### Register for a free HERE Account
+### Workshop Prerequisites
+
+#### Install node and npm
+
+Download and install Node on your machine: https://nodejs.org/en/download/
+Use the latest LTS Version: 12.18.3
+
+#### Checkout workshop repository
+URL: https://github.com/heremaps/devrel-workshops/tree/master/harp.gl/grace-hopper-2020
+
+#### Section 1: Initial App Setup
+The initial app set up for all three steps has already been done for you. 
+The workshop is divided into three steps under the folders: 
+1. point-clouds
+2. intermediate
+3. hdmap
+
+You will be working off of the 'initial' folder during the workshop.
+
+#### Register for a free HERE Account
 
 Go to https://developer.here.com/sign-up?create=Freemium-Basic&keepState=true&step=account
 
-Create an API key
+1. Create an account using your details
+2. Generate an app under the 'REST' section
+3. Create an API Key
+4. Replace the new api key in the file: ./apikey.ts
 
-##### Create basic harp application
+#### Section 2: Initial setup
 
-```bash
-npm init @here/harp.gl-app
-```
+##### npm install
+Run this command in each of the three sub-folders mentioned below:
 
-Choose Language as Typescript
+1. ./point-clouds/initial 
+2. ./intermediate/initial
+3. ./hdmap/initial
 
-When asked for an APIKey, use the one created above
+##### Run the app
+Go to ./point-clouds/initial folder and run the app using the command below:
 
-FIXME: Why is this necessary
-
-```bash
-THREE=`npm view @here/harp-mapview peerDependencies.three`
-npm install --save three@$THREE
-```
-
-All the above steps have already been done in the folder : ./intermediate/initial
-You have an option to skip the steps above
-
-#### Section 2: Run the App
-
-```
+````
 npm start
-```
+````
 
 You should be able to see a map as shown below:
 
 ![](MapGIF.gif)
-
-
