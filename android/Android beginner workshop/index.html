@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="stylesheets/stylesheet.css"/>
+<title>HERE Workshop</title>
+<link rel="shortcut icon" type="image/png" href="img/HERE_Favicon.png">
+</head>
+<body>
+<header>
+    <img src="img/HERE_Logo.png" alt="HERE Logo" class="logo" width="80">
+    <h1 class="title">HERE SDK Android Explore Edition</h1>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle"> 
+    <nav>
+        <ul>
+            <li><a href="#start-page">Start</a></li>
+            <li><a href="#step-1">Step 1</a></li>
+            <li><a href="#step-2">Step 2</a></li>
+            <li><a href="#step-3">Step 3</a></li>
+            <li><a href="#step-4">Step 4</a></li>
+            <li><a href="#step-5">Step 5</a></li>
+        </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+    </label>
+</header>
+<div class="content">
+    <p class="adjuster"></p>
+    <section id="start-page">
+        <h2>Scope</h2>
+        <p>In this workshop we will set up a simple map using the HERE SDK for Android Explore Edition in 5 simple steps.
+            <ol>
+                <li>Download the HERE SDK</li>
+                <li>Import SDK into your example</li>
+                <li>Load example and enter credentials</li>
+                <li>Build and Run</li>
+                <li>Final Result</li>
+            </ol>
+        </p>
+        <h2>Pre-requisites</h2>
+        <h3>Get Freemium</h3>
+        <p>To access any of the APIs or SDKs, first get your credentials by signing up for a <a href="https://developer.here.com">freemium account</a>.</p>
+        <h3>Get Android SDK Access Key and Secret</h3>
+        <ul>
+            <li>Go to the project page on your account at <a href="https://www.developer.here.com"> developer.here.com</a>.</li>
+            <li>Scroll down to the <strong>HERE SDK for Android or iOS</strong> section and click on <strong>Create credentials</strong>.</li>
+            <li style="list-style: none;"><br/></li>
+            <li style="list-style: none;"><img class="center"  src="img/SDK.png" alt="SDK section of project page" width="100%" style="border:  solid 1px grey;" > </li>
+            <li style="list-style: none;"><br/></li>
+            <li>Download the file which contains the ACCESS KEY ID and ACCESS KEY SECRET</li>
+            <li style="list-style: none;"><br/></li>
+            <li style="list-style: none;"><img class="center"  src="img/api_secret.png" alt="API ID and secret" width="100%" > </li>
+        </ul>
+        <h3>Install Android Studio</h3>
+        <ul>
+            <li><img src="img/android-studio-logo.png" alt="android studio logo" width="50"> Download the <a href="https://developer.android.com/studio">Android Studio</a></li>
+            <li>Install the studio by following the video below. Start at 01:27 and follow until 05:46.</li>
+            <li style="list-style: none;"><br/></li>
+            <li style="list-style: none;"><iframe width="560" height="315" src="https://www.youtube.com/embed/Nso-cz_g-aw?start=87" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+
+        </ul>
+        <h3>Join our Slack</h3>
+        <p><a href="http://t.her.is/slack"><img src="img/slack.png" alt="slack_logo" width="50px"></a> During the workshop, if you have any questions, please drop them on our Slack channel <strong>weu-workshop</strong></p>
+        <h3>Let's begin!</h3>
+    </section>
+    <section id="step-1">
+        <p class="adjuster"></p>
+        <h2>STEP 1</h2>
+        <h3>Download HERE SDK for Android Explore Edition</h3>
+        
+        <ul>
+            <li>Go back to the project page on your account at <a href="https://www.developer.here.com"> developer.here.com</a>.</li>
+            <li>Scroll down to the <strong>HERE SDK for Android or iOS</strong> section and click on <img src="img/download.png" alt="download icon" width="20"> next to Download SDK for Android (Explore Edition).</li>
+            <li style="list-style: none;"><br/></li>
+            <li style="list-style: none;"><img src="img/SDK_download.png" alt="Android SDK section of project page" width="100%" style="border:  solid 1px grey;" > </li>
+            <li style="list-style: none;"><br/></li>
+            <li>Extract the downloaded file in your workshop folder</li>
+        </ul>
+       
+    </section>
+<section id="step-2">
+    <h2>STEP 2</h2>
+    <h3>Import SDK</h3>
+    <ul>
+        <li>Navigate to the '*.aar' file in the extracted folder and copy it
+        <ul style="list-style-image: url('img/arrow.png');">
+            <li>heresdk-explore-android-4.3.3.0.2053</li>
+            <li>heresdk-explore-android-4.3.3.0.2053.aar</li>
+        </ul>
+        </li>
+        <li>Paste this file in the <strong>libs</strong> folder of the <strong>HelloMap</strong> example.
+            <ul style="list-style-image: url('img/arrow.png');">
+                <li>heresdk-explore-android-4.3.3.0.2053</li>
+                <li>heresdk-explore-android-examples-4.3.3.0</li>
+                <li>HelloMap</li>
+                <li>app</li>
+                <li>libs</li>
+            </ul>
+        </li>
+    </ul>
+    
+</section>
+<section id="step-3">
+    <h2>STEP 3</h2>
+    <h3>Load Example</h3>
+    <ul>
+        <li>Open the Android Studio and click on <strong>Open an existing Android Studio project</strong></li>
+        <li>Navigate to the extracted folder in the previous step to open the example <strong>HelloMap</strong> 
+            <ul style="list-style-image: url('img/arrow.png');">
+                <li>heresdk-explore-android-4.3.3.0.2053</li>
+                <li>heresdk-explore-android-examples-4.3.3.0</li>
+                <li>HelloMap</li>
+            </ul></li>
+        <li style="list-style: none;"><br/></li>
+        <li style="list-style: none;"><img src="img/open_file.png" alt="Hello Map Example" width="80%" style="border:  solid 1px grey;" > </li>
+        <li style="list-style: none;"><br/></li>
+    </ul>
+    <h3>Enter Credentials</h3>
+    <ul>
+        <li>Click on the Android icon on the top-left of the IDE.</li>
+        <li>Open the file AndroidManifest.xml
+            <ul style="list-style-image: url('img/arrow.png');">
+                <li>app</li>
+                <li>manifests</li>
+                <li>AndroidManifest.xml</li>
+            </ul>  
+        </li>
+        <li style="list-style: none;"><br/></li>
+        <li style="list-style: none;"><img class="center"  src="img/manifest.png" alt="Hello Map Example" width="80%" style="border:  solid 1px grey;" > </li>
+        <li style="list-style: none;"><br/></li>
+        <li>In the code window, go to the section <strong>Set your credentials for the HERE SDK</strong>. </li>
+        <li>From the downloaded credential file, copy the Access Key ID and the Access Key Secret and paste it in the code. </li>
+        <li style="list-style: none;"><br/></li>
+        <li style="list-style: none;"><img class="center"  src="img/key.png" alt="Hello Map Example" width="80%" style="border:  solid 1px grey;" > </li>
+        <li style="list-style: none;"><br/></li>
+    </ul>
+    
+</section>
+<section id="step-4">
+    <h2>STEP 4</h2>
+    <h3>Start Emulator</h3>
+    <p>You need to do this step only once when you start the Android Studio.</p>
+    <ul>
+        <li>In the tool bar, open the <strong>AVD Manager</strong> </li>
+        <li style="list-style: none;"><br/></li>
+        <li style="list-style: none;"><img class="center"  src="img/avd_launch.png" alt="Hello Map Example" width="80%" style="border:  solid 1px grey;" > </li>
+        <li style="list-style: none;"><br/></li>
+        <li>Click on the green arrow to launch the emulator.</li>
+        <li>A phone emulator will appear on your screen. Click on the power-on button on the phone.</li>
+        <li style="list-style: none;"><br/></li>
+        <li style="list-style: none;"><img class="center" src="img/power on.png" alt="Hello Map Example" width="250px" height="400px" style="border:  solid 1px grey; " /> </li>
+        <li style="list-style: none;"><br/></li>
+    </ul>
+    <h3>Build and Run</h3>
+    <ul>
+        <li>Click on <strong>Build</strong> in the menu and then click on <strong>Make Project</strong>. Wait until the build is complete.</li>
+        <li>Click on <strong>Run</strong> in the menu and then click on <strong>Run App</strong>.</li>
+        <li>Your app will load on the phone emulator.</li>
+        <li>Allow the permissions that the app needs.</li>
+    </ul>
+    
+    
+</section>
+<section id="step-5">
+    <h2>STEP 5</h2>
+    <h3>Final Result</h3>
+    <p>Your app should look something like this. You can scroll around just like a normal app.</p>
+    <img class="center" src="img/app.png" alt="final app" width="230px" height="400px" style="border:  solid 1px grey; " />
+    <h3>Next Steps</h3>
+    <ul>
+        <li>Try changing the center of the map.</li>
+        <li>Try other examples from the downloaded folder.</li>
+        <li>Try more examples from the <a href="https://github.com/heremaps/here-sdk-examples"> GitHub Repository.</a></li>
+    </ul>
+       
+    <h3>Contact Us</h3>
+    <p><a href="https://twitter.com/heredev"><img src="img/twitter.png" alt="Foo"></a>
+    <a href="http://t.her.is/slack"><img src="img/slack.png" alt="Foo"></a>
+    <a href="https://stackoverflow.com/questions/tagged/here-api"><img src="img/stackoverflow.png" alt="Foo"></a>
+    <a href="https://github.com/heremaps"><img src="img/github.png" alt="Foo"></a></p>
+    <h3>Watch live webinars and videos</h3>
+    <p><a href="https://www.twitch.tv/heredev"><img src="img/twitch.png" alt="Foo"></a>
+    <a href="https://www.youtube.com/heremaps"><img src="img/youtube.png" alt="Foo"></a></p>
+    <h3>Developer Tutorials and Blogs</h3>
+    <p><a href="https://developer.here.com/blog">Developer Blog</a>
+    </br>
+    <a href="https://developer.here.com/tutorials">Developer Tutorials</a></p>
+</section>
+</div>
+</body>	
+</html>
