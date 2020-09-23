@@ -383,4 +383,4 @@ fetch("./resources/signs.json")
             });
 ````
 #### See poles and signs rendering as below
-![](polkes_signs_3d_camera_changed.gif)
+![](poles_signs_3d.gif)
