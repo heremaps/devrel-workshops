@@ -1,0 +1,1195 @@
+{
+    "type": "FeatureCollection",
+    "etag": "91f4e057a8e31d525807ff99dd7bd257",
+    "features": [
+        {
+            "id": "1622566058381494895",
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.70044, 48.32886, 501.74476749]
+            }
+        },
+        {
+            "id": "1622566057622328897",
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 64,
+                    "eastCm": -3,
+                    "northCm": -3
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "10ea0a64-5f90-48cf-ad59-65d23d40c443",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.73175628, 48.33934211, 502.28391438]
+            }
+        },
+        {
+            "id": "1622566056241137021",
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 71,
+                    "eastCm": -3,
+                    "northCm": 3
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "c95f533f-8757-4cfa-8d0b-7f5fae95d0c6",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.73185896, 48.33930113, 501.99820665]
+            }
+        },
+        {
+            "id": "1622566058806075152",
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 93,
+                    "eastCm": 1,
+                    "northCm": -6
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "96ded76e-b822-4ff8-80ad-145e8009572c",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.73213678, 48.33962271, 500.91425497]
+            }
+        },
+        {
+            "id": "1622566056194696570",
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 100,
+                    "eastCm": 1,
+                    "northCm": 0
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "12eafcfa-ea46-48f7-bdec-8741a800c012",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 21
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 21
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.71162661, 48.33954225, 512.66820235]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.699908375740051, 48.33419696131817]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.699286103248596, 48.33422727386061]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.69982522726059, 48.334328909900826]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.699967384338379, 48.33447155663309]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.700101494789124, 48.3344376780703]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.700265109539032, 48.33443946115312]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.700262427330017, 48.33434674076419]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.699361205101013, 48.3338974011062]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.699379980564117, 48.33377615004385]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.69918417930603, 48.333738704804574]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.700149774551392, 48.334617769119475]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.70045018196106, 48.334963684795916]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.700884699821472, 48.33509563139437]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.70139968395233, 48.33558418744814]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.701796650886536, 48.3359087001956]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.698738932609558, 48.333440925018]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.699012517929077, 48.333358901537785]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.698551177978516, 48.33474615046912]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.698352694511414, 48.33483173785598]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.698814034461975, 48.33530246591558]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.699532866477966, 48.33556279093067]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.700042486190794, 48.33391879832258]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.699361205101013, 48.33367986223012]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.700648665428162, 48.333893834902625]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.700267791748047, 48.333062902664054]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.700788140296936, 48.333276877925584]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.701238751411436, 48.33569473597869]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.701474785804749, 48.33591583232068]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.701887845993042, 48.336069172769]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.701909303665161, 48.336272437303556]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.70166790485382, 48.33485313468026]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "poleType": {
+                    "poleType": "POLE_TYPE_UNKNOWN"
+                },
+                "centralAxis": {
+                    "upCm": 57,
+                    "eastCm": -1,
+                    "northCm": 4
+                },
+                "featureType": "Pole",
+                "isoCountryCode": "---",
+                "@ns:com:here:xyz": {
+                    "tags": [],
+                    "uuid": "5010d43c-8a7d-4d22-bbd1-29aee9c59777",
+                    "space": "6UwdEp8H",
+                    "createdAt": 1598279648754,
+                    "updatedAt": 1598279648754
+                },
+                "topCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                },
+                "bottomCrossSectionDiameterCm": {
+                    "dimensionCm": 19
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.701297760009766, 48.33477111347179]
+            }
+        }
+    ]
+}
