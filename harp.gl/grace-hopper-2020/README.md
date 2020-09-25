@@ -17,8 +17,17 @@ This will be achieved using an open-source 3D web-map rendering engine – [harp
 Download and install Node on your machine: https://nodejs.org/en/download/
 Use the latest LTS Version: 12.18.3
 
+Add the NPM registry to your config with the following command:
+
+````
+npm config set registry http://registry.npmjs.org
+````
+
 #### Checkout workshop repository
-URL: https://github.com/heremaps/devrel-workshops/tree/master/harp.gl/grace-hopper-2020
+URL:  https://github.com/heremaps/devrel-workshops/tree/master/
+
+The repository we would be working on is placed within the folder structure harp.gl/grace-hopper-2020. 
+Follow the instructions to set up the application after navigating to this path.
 
 #### Section 1: Initial App Setup
 The initial app set up for all three steps has already been done for you. 
@@ -37,6 +46,8 @@ Go to https://developer.here.com/sign-up?create=Freemium-Basic&keepState=true&st
 2. Generate an app under the 'REST' section
 3. Create an API Key
 4. Replace the new api key in the file: ./apikey.ts
+
+![Creating an app under REST](apikey.png)
 
 #### Section 2: Initial setup
 
