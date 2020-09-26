@@ -141,10 +141,6 @@ export class View {
             .then(signsData => {
                 // Iterate through signs data
                 signsData.features.forEach(signFeature => {
-                    // Hard code the radius to 10m initially
-                    // Change the color
-                    // May need to set a constant height
-                    // 2D visualization using OMV first
                     const geoCoordinate = new GeoCoordinates(
                         signFeature.geometry.coordinates[1],
                         signFeature.geometry.coordinates[0],
