@@ -1,12 +1,14 @@
-# Rendering intermediate localization objects: signs and poles
+# Rendering intermediate map features: localization objects - signs and poles
+In this example, we render map features such as signs and poles. 
+
+This is a sample dataset, which is generated after machine learning algorithms detect map features (such as signs and poles) from 2D images.
+The location of these features is extracted by fusing Lidar point cloud with 2D images (Lidar point to camera pixel projection).
+
+While Lidar data helps to provide accuracy, car sensor data self-heals the map and ensures freshness.
 
 ## Section 1: Visualize poles and signs JSON data in 2D
 
 Json Files with poles and signs data are available under ./intermediate/initial/resources
-This is the data we will be visualizing in 3D.
-Copy these json files to your resources folder.
-
-This is a sample dataset, which is generated after machine learning algorithms (developed for 2D images) automatically extract features such as lane markings, signs and poles from imagery and LIDAR point cloud data.
 This data is in GeoJSON format and can be previewed on http://geojson.tools/index.html
 
 ### Update Map Location
@@ -25,7 +27,7 @@ mapView.lookAt({
 });
 ```
 
-### Add styling for poles and signs
+### Add data-driven styling for poles and signs
 
 #### View.ts
 
@@ -35,6 +37,7 @@ const mapView = new MapView({
     decoderUrl: 'decoder.bundle.js',
     theme: {
         extends: 'resources/berlin_tilezen_base.json',
+        // Data driven styling : https://developer.here.com/tutorials/harpgl/#data-driven-styling
         styles: {
             poles: [
                 {
@@ -57,12 +60,12 @@ const mapView = new MapView({
 });
 ```
 
-### Add a data source for poles data
+### Add a data source for poles to the map 
 
 #### Create DataSource for poles
 
-This includes creating a datasource provider which uses the pole.json file.
-VectorTileDataSource uses the provider and sets the style set as defined above.
+This includes creating a datasource provider which uses the poles.json file.
+[VectorTileDataSource](https://www.harp.gl/docs/master/doc/modules/harp_vectortile_datasource.html) uses the provider and sets the styleset as defined above.
 
 ```
 const geoJsonDataPolesProvider = new GeoJsonDataProvider(
@@ -168,6 +171,8 @@ signsDataSource.enabled = true;*/
 
 Add the following import to be able to use THREE.
 
+##### View.ts
+
 ```
 import * as THREE from "three";
 import {MapAnchor} from '@here/harp-mapview';
@@ -175,12 +180,17 @@ import {GeoCoordinates} from "@here/harp-geoutils";
 
 ```
 
-Add the following method for creation of 3D pole objects.
+Add the following method for creation of 3D objects for a pole feature.
 
 [Object3D](https://threejs.org/docs/#api/en/core/Object3D) is the base class for most objects in three.js and provides a set of properties and methods for manipulating objects in 3D space.
 
-In the method below, we create a Mesh for the pole with cylinder geometry and MeshStandardMaterial.
+In the method below, we create a Mesh for the pole with [CylinderGeometry](https://threejs.org/docs/#api/en/geometries/CylinderGeometry) and [MeshStandardMaterial](https://threejs.org/docs/#api/en/materials/MeshStandardMaterial)
 Before adding the geometry to the Mesh, it is rotated by 90 degrees and scaled down.
+
+Since harp.gl is built upon three.js, you can add any 3D object to the map scene, just like you would with any other three.js scene.
+
+For more information on three.js scenes and objects, please take a look at the [three.js manual](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene)
+
 
 ```
 protected createPole(topDiameter, bottomDiameter): MapAnchor<THREE.Object3D> {
@@ -189,8 +199,8 @@ protected createPole(topDiameter, bottomDiameter): MapAnchor<THREE.Object3D> {
     var cylinderGeometry = new THREE.CylinderGeometry(
         topDiameter / 2,
         bottomDiameter / 2,
-        60,
-        50
+        60, // height
+        50 // radialSegments
     );
     var material = new THREE.MeshStandardMaterial({
         color: 0xffff00,
@@ -253,7 +263,11 @@ Pan and tilt the map to see these objects
 #### Visualize signs data
 
 Incase of signs, we have rectangular as well as circular signs.
-Both these shapes will be created differently.
+Both these shapes will be created differently. 
+
+Rectangle: [ExtrudeBufferGeometry](https://threejs.org/docs/#api/en/geometries/ExtrudeBufferGeometry)
+
+Circle: [CylinderBufferGeometry](https://threejs.org/docs/#api/en/geometries/CylinderBufferGeometry)
 
 Please add the three methods below:
 
