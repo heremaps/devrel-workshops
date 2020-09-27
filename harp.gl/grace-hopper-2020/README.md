@@ -51,8 +51,12 @@ Go to https://developer.here.com/sign-up?create=Freemium-Basic&keepState=true&st
 
 #### Section 2: Initial setup
 
-##### npm install
-Run this command in each of the three sub-folders mentioned below:
+##### Prepare workshop steps
+Run this command in each of the three sub-folders mentioned below
+
+````
+npm install
+````
 
 1. ./point-clouds/initial 
 2. ./intermediate/initial
