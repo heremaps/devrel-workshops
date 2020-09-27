@@ -2,7 +2,7 @@
 
 ## Initialize app
 
-- Follow initial steps from pre-requesites.
+- Follow initial steps from pre-requisites.
 - `npm install`
 - `npm start`
 
