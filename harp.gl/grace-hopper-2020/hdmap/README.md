@@ -86,3 +86,8 @@ loader.load(
 ````
 ## Check the HD Map!
 ![](HDMap.gif)
+
+The HERE HD Live Map is a cloud-based service comprised of various tiled mapping layers that are highly accurate and continuously updated to support connected ADAS and highly automated driving solutions. 
+The layers are logically structured into Road Model, HD Lane Model, and HD Localization Model. 
+
+Refer: https://www.youtube.com/watch?v=8dyo_S3Vxlw&list=RDCMUC0m3Fy5uK4OwOf7iPNuwGVg&start_radio=1&t=67
