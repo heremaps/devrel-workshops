@@ -39,7 +39,7 @@ export class View {
             theme: {
                 extends: 'resources/berlin_tilezen_base.json',
                 styles: {
-                    // Can add steps to modify when and technique
+                    // Data driven styling : https://developer.here.com/tutorials/harpgl/#data-driven-styling
                     poles: [
                         {
                             when: ['==', ['geometry-type'], 'Point'],
@@ -170,14 +170,18 @@ export class View {
         return mapView;
     }
 
+    // Add 3D objects to the map : https://developer.here.com/tutorials/harpgl/#add-3d-objects-to-the-map
+    // Since harp.gl is built upon three.js, you can add any 3D to the map scene, just like you would with any other three.js scene.
+    // For more information on three.js scenes and objects, please take a look at the three.js manual.
+
     protected createPole(topDiameter, bottomDiameter): MapAnchor<THREE.Object3D> {
         const pole = new THREE.Object3D();
 
         var cylinderGeometry = new THREE.CylinderGeometry(
             topDiameter / 2,
             bottomDiameter / 2,
-            60,
-            50
+            60, // height
+            50 // radialSegments
         );
         var material = new THREE.MeshStandardMaterial({
             color: 0xffff00,

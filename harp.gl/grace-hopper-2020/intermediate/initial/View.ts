@@ -5,7 +5,6 @@
  */
 
 import { Theme } from "@here/harp-datasource-protocol";
-import { MapControls } from "@here/harp-map-controls";
 import { MapView } from "@here/harp-mapview";
 import { VectorTileDataSource } from "@here/harp-vectortile-datasource";
 // @ts-ignore
@@ -41,8 +40,6 @@ export class View {
             authenticationCode: Apikey.apiKey
         });
         mapView.addDataSource(dataSource);
-
-        MapControls.create(mapView);
 
         return mapView;
     }
