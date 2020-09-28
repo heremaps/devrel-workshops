@@ -1,7 +1,7 @@
 # Welcome to the Virtual Grace Hopper Celebration 2020!
 
 ## Workshop Topic
-### Sensor (LiDAR) To HD Maps For Driverless Cars: Visualize The Transformation In 3D
+### LiDAR Sensor To HD Maps For Driverless Cars: Visualize The Transformation In 3D
 
 Understanding the steps involved in HD map-making and seeing them come alive by visualizing them using a 3D-map rendering engine is like hitting two targets with one arrow.
 
