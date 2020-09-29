@@ -51,7 +51,7 @@ const mapView = new MapView({
                 {
                     when: ['==', ['geometry-type'], 'Point'],
                     technique: 'squares',
-                    color: '#ff00ff',
+                    color: '#003cff',
                     size: 20
                 }
                 ]
