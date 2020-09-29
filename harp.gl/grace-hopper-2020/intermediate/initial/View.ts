@@ -4,9 +4,12 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { Theme } from "@here/harp-datasource-protocol";
-import { MapView } from "@here/harp-mapview";
-import { VectorTileDataSource } from "@here/harp-vectortile-datasource";
+import { Theme } from '@here/harp-datasource-protocol';
+import { MapAnchor, MapView } from '@here/harp-mapview';
+import { VectorTileDataSource } from '@here/harp-vectortile-datasource';
+
+import * as THREE from 'three';
+import { GeoCoordinates } from '@here/harp-geoutils';
 // @ts-ignore
 import { Apikey } from '../../apikey';
 
