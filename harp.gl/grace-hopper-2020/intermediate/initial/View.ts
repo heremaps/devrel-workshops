@@ -6,7 +6,7 @@
 
 import { Theme } from '@here/harp-datasource-protocol';
 import { MapAnchor, MapView } from '@here/harp-mapview';
-import { VectorTileDataSource } from '@here/harp-vectortile-datasource';
+import { GeoJsonDataProvider, VectorTileDataSource } from '@here/harp-vectortile-datasource';
 
 import * as THREE from 'three';
 import { GeoCoordinates } from '@here/harp-geoutils';
