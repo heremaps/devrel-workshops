@@ -22,7 +22,22 @@ window.addEventListener("resize", () => {
 });
 
 // center the camera to New York
-mapView.lookAt(new GeoCoordinates(40.70398928, -74.01319808), 1500, 40, 0);
+mapView.lookAt({target: new GeoCoordinates(40.70398928, -74.01319808), zoomLevel:16, tilt: 40});
 
-// make sure the map is rendered
-mapView.update();
+
+interface Point {
+    lat: number; // latitude
+    lng: number; // longitude
+    alt: number; // altitude
+    c: number; // classification
+    r: number; // red
+    g: number; // green
+    b: number; // blue
+}
+
+fetch("https://ghc2020.s3.amazonaws.com/point-cloud.json")
+    .then(res => res.json())
+    .then(addPointCloud);
+
+function addPointCloud(json: any) {
+}
