@@ -30,7 +30,7 @@ Add the scene to the map anchor
 // Load the Lanes 
 loader.load(
     // resource URL
-    'https://ghc2020.s3.amazonaws.com/lanesold.gltf',
+    'https://ghc2020.s3.amazonaws.com/lanes.gltf',
     // called when the resource is loaded
     function ( gltf ) {
         anchor.add(gltf.scene);
@@ -73,6 +73,7 @@ loader.load(
     'https://ghc2020.s3.amazonaws.com/poles.gltf',
     function ( gltf ) {
         anchor.add(gltf.scene);
+        mapView.update();
     },
     // called while loading is progressing
     function ( xhr ) {

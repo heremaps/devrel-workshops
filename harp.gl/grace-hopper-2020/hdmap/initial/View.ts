@@ -6,8 +6,14 @@
 
 import { Theme } from "@here/harp-datasource-protocol";
 import { MapControls } from "@here/harp-map-controls";
-import { MapView } from "@here/harp-mapview";
+import { MapView, MapAnchor } from "@here/harp-mapview";
 import { VectorTileDataSource } from "@here/harp-vectortile-datasource";
+import { GeoCoordinates } from '@here/harp-geoutils';
+
+import * as THREE from "three";
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
+
 import { Apikey } from '../../apikey';
 
 const defaultTheme = "resources/berlin_tilezen_base.json";
