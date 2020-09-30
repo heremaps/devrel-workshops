@@ -28,6 +28,7 @@ HERE workshops exist for the following topics:
    - [Fleet Management](azure/fleetmanagement/README.md)
 - [100DaysOfCode WithHERE](100DaysOfCodeWithHERE)
   - [100DaysOfCode challenge with HERE Web SDK](100DaysOfCodeWithHERE/README.md)
+- [Ad-Tech with HERE, AWS IoT and AWS Lambda](ad-tech-with-here) 
 
 As more workshops are created, they will be added to the list and will be given at various events.
 
