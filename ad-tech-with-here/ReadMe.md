@@ -12,4 +12,4 @@
 - replace the api endpoint in [dispGeofences.js](static/js/dispGeofences.js) and [showCar.js](static/js/showCar.js)
 - run [geocode_data_publish.py](geocode_data_publish.py)
 - run [flaskserver.py](flaskserver.py)
-- open [localhost:5000](127.0.0.1:5000/) in your browser
+- open [localhost:5000](http://127.0.0.1:5000/) in your browser
