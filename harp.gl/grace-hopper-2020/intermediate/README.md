@@ -214,6 +214,7 @@ protected createPole(topDiameter, bottomDiameter): MapAnchor<THREE.Object3D> {
     var cylinder = new THREE.Mesh(cylinderGeometry, material);
 
     pole.add(cylinder);
+    cylinder.renderOrder = 10000;
     return pole;
 }
 ```
@@ -315,6 +316,7 @@ protected createSignShape(signShape, width, height, angle) {
         var box = new THREE.Mesh(extrudedGeometry, material);
 
         sign.add(box);
+        box.renderOrder = 10000;
 
         return sign;
     }
@@ -342,6 +344,7 @@ protected createSignShape(signShape, width, height, angle) {
         var box = new THREE.Mesh(cylinderBufferGeometry, material);
 
         sign.add(box);
+        box.renderOrder = 10000;
 
         return sign;
     }

@@ -195,6 +195,7 @@ export class View {
         var cylinder = new THREE.Mesh(cylinderGeometry, material);
 
         pole.add(cylinder);
+        cylinder.renderOrder = 10000;
 
         return pole;
     }
@@ -240,6 +241,7 @@ export class View {
         var box = new THREE.Mesh(extrudedGeometry, material);
 
         sign.add(box);
+        box.renderOrder = 10000;
 
         return sign;
     }
@@ -267,6 +269,7 @@ export class View {
         var box = new THREE.Mesh(cylinderBufferGeometry, material);
 
         sign.add(box);
+        box.renderOrder = 10000;
 
         return sign;
     }
