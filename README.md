@@ -12,7 +12,7 @@ HERE workshops exist for the following topics:
 - [JavaScript](javascript)
   - [Intro by Michael Palermo](javascript/intro-palermo/README.md)
   - [Intro by Nic Raboy](javascript/intro-raboy/README.md)
-  - [Intro by Shruti Kuber](javascript/intro-shruti/README.md)
+  - [Isolines with EV-Charging](javascript/intro-shruti/README.md)
   - [Implementing location services in your web application](javascript/implementing-location-services-raboy)
 - [Vue.js](vue/README.md)
 - [SAP](sap)
