@@ -9,6 +9,7 @@ Walk away with visualization of LiDAR point-clouds collected by HERE cars, raw f
 
 This will be achieved using an open-source 3D web-map rendering engine – [harp.gl](https://www.harp.gl/)
 
+You can join our Slack space created especially to answer questions related to this workshop online. To join, follow this link: [here-lidar-hdmap-ghc2020](https://join.slack.com/t/heredev/shared_invite/zt-45nix79z-LbCITCINZsLI2eVfazcHFg)
 
 ### Workshop Prerequisites
 
