@@ -30,8 +30,6 @@ harp.gl is a beta product and we are always looking to improve it with your feed
 ### harp.gl resources
 
 - [harp.gl Github repo](https://github.com/heremaps/harp.gl) (Source code for harp.gl)
-- [harp.gl documentation](http://harp.gl.s3-website-us-east-1.amazonaws.com/docs/master/doc/)
-- [harp.gl examples](http://harp.gl.s3-website-us-east-1.amazonaws.com/docs/master/examples/) (curated list of examples)
 - [harp.gl modules on npm](https://www.npmjs.com/~heremaps)
 
 ### XYZ Resources
